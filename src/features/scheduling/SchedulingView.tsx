@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { useAppState } from '../../state/AppStateContext'
+import { useCanEdit } from '../../state/AuthContext'
 import { formatDayTabLabel } from '../../lib/scheduling'
 import { getSlotCellLines } from '../../lib/scheduleDisplay'
 import { generateSchedulePdf, generateSchedulePdfForDay } from '../../lib/pdf/schedulePdf'
@@ -18,6 +19,7 @@ export default function SchedulingView() {
     unassignSlot,
     swapSlotAssignments,
   } = useAppState()
+  const canEdit = useCanEdit()
 
   const [selectedDay, setSelectedDay] = useState<number | null>(
     state.dayConfigs[0]?.day ?? null,
@@ -80,7 +82,7 @@ export default function SchedulingView() {
   }
 
   const handleGenerate = () => {
-    if (!currentDayConfig) return
+    if (!canEdit || !currentDayConfig) return
     const hasAssignments = daySlots.some((slot) => slot.assignedMatchId)
     if (hasAssignments) {
       const confirmed = window.confirm(
@@ -93,7 +95,7 @@ export default function SchedulingView() {
   }
 
   const handleRemoveDay = () => {
-    if (!currentDayConfig) return
+    if (!canEdit || !currentDayConfig) return
     const confirmed = window.confirm(
       `${formatDayTabLabel(currentDayConfig.date)} wirklich entfernen? Alle Slot-Zuordnungen dieses Tages gehen verloren.`,
     )
@@ -103,6 +105,7 @@ export default function SchedulingView() {
   }
 
   const handleSelectSlot = (slotId: string) => {
+    if (!canEdit) return
     const slot = state.slots.find((entry) => entry.id === slotId)
     if (slot?.assignedMatchId) {
       setSelectedSlotId(null)
@@ -119,18 +122,20 @@ export default function SchedulingView() {
   }
 
   const handleUnassignSlot = (slotId: string) => {
+    if (!canEdit) return
     unassignSlot(slotId)
     if (selectedSlotId === slotId) setSelectedSlotId(null)
     setSwapSelection((prev) => prev.filter((id) => id !== slotId))
   }
 
   const handleSwapMatches = () => {
-    if (swapSelection.length !== 2) return
+    if (!canEdit || swapSelection.length !== 2) return
     swapSlotAssignments(swapSelection[0], swapSelection[1])
     setSwapSelection([])
   }
 
   const handleAssign = (matchId: string) => {
+    if (!canEdit) return
     if (!selectedSlotId) {
       setFeedback('Bitte zuerst einen freien Slot im Plan auswählen.')
       return
@@ -216,9 +221,11 @@ export default function SchedulingView() {
                   {formatDayTabLabel(config.date)}
                 </button>
               ))}
-            <button type="button" className="day-tab day-tab--add" onClick={addDayConfig}>
-              + Spieltag
-            </button>
+            {canEdit && (
+              <button type="button" className="day-tab day-tab--add" onClick={addDayConfig}>
+                + Spieltag
+              </button>
+            )}
           </div>
 
           {currentDayConfig ? (

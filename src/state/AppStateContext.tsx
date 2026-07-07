@@ -14,6 +14,7 @@ import { createSampleState } from '../lib/sampleData'
 import { buildDisplayName } from '../lib/teams'
 import { createDefaultDayConfig, generateSlotsForDay } from '../lib/scheduling'
 import { applyResultToMatch, createDefaultSets, getMatchFormat, isTiebreakScore } from '../lib/matchResult'
+import { fetchPublishedState, getLastKnownPublishedAt, recordAdoptedPublishedAt } from '../lib/publish'
 import { useAuth } from './AuthContext'
 
 /** Setzt den Verplanungs-Status, ohne ein bereits abgeschlossenes Match zurückzusetzen. */
@@ -72,6 +73,28 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     saveState(state)
   }, [state])
+
+  // Beim Start prüfen, ob es eine neuere veröffentlichte Version gibt (nur
+  // über http/https, nicht file://) - falls ja, diese übernehmen, damit
+  // Besucher und neue Geräte den zuletzt veröffentlichten Stand sehen statt
+  // eines leeren/veralteten lokalen Zustands. Eigene, noch unveröffentlichte
+  // lokale Änderungen bleiben erhalten, solange kein neuerer Stand vorliegt.
+  useEffect(() => {
+    let cancelled = false
+    ;(async () => {
+      const published = await fetchPublishedState()
+      if (!published || cancelled) return
+      const lastKnown = getLastKnownPublishedAt()
+      const isNewer = !lastKnown || new Date(published.publishedAt) > new Date(lastKnown)
+      if (isNewer) {
+        setState(published.state)
+        recordAdoptedPublishedAt(published.publishedAt)
+      }
+    })()
+    return () => {
+      cancelled = true
+    }
+  }, [])
 
   const updateTeam: AppStateContextValue['updateTeam'] = (teamId, updates) => {
     setState((prev) => ({

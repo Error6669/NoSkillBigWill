@@ -8,6 +8,7 @@ import ResultsView from './features/results/ResultsView'
 import MyGamesView from './features/mygames/MyGamesView'
 import { exportStateToFile, importStateFromFile } from './lib/storage'
 import { downloadMyGamesHtml } from './lib/htmlExport'
+import { publishStateToGithub } from './lib/publish'
 import { AppStateProvider, useAppState } from './state/AppStateContext'
 import { AuthProvider, useCanEdit } from './state/AuthContext'
 
@@ -69,6 +70,7 @@ function AppShell() {
         onDownloadMyGames={() => downloadMyGamesHtml(state)}
         onLoadSampleData={handleLoadSampleData}
         onReset={handleReset}
+        onPublish={(token) => publishStateToGithub(state, token)}
       />
       <TabNavigation activeTab={activeTab} onChange={setActiveTab} />
       <main className="app-content">

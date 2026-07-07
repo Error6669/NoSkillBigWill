@@ -1,0 +1,1272 @@
+{
+  "publishedAt": "1970-01-01T00:00:00.000Z",
+  "state": {
+    "teams": [
+      {
+        "id": "A1",
+        "groupId": "A",
+        "position": 1,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "A2",
+        "groupId": "A",
+        "position": 2,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "A3",
+        "groupId": "A",
+        "position": 3,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "A4",
+        "groupId": "A",
+        "position": 4,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "B1",
+        "groupId": "B",
+        "position": 1,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "B2",
+        "groupId": "B",
+        "position": 2,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "B3",
+        "groupId": "B",
+        "position": 3,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "B4",
+        "groupId": "B",
+        "position": 4,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "C1",
+        "groupId": "C",
+        "position": 1,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "C2",
+        "groupId": "C",
+        "position": 2,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "C3",
+        "groupId": "C",
+        "position": 3,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "C4",
+        "groupId": "C",
+        "position": 4,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "D1",
+        "groupId": "D",
+        "position": 1,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "D2",
+        "groupId": "D",
+        "position": 2,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "D3",
+        "groupId": "D",
+        "position": 3,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "D4",
+        "groupId": "D",
+        "position": 4,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "E1",
+        "groupId": "E",
+        "position": 1,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "E2",
+        "groupId": "E",
+        "position": 2,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "E3",
+        "groupId": "E",
+        "position": 3,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "E4",
+        "groupId": "E",
+        "position": 4,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "F1",
+        "groupId": "F",
+        "position": 1,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "F2",
+        "groupId": "F",
+        "position": 2,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "F3",
+        "groupId": "F",
+        "position": 3,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "F4",
+        "groupId": "F",
+        "position": 4,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "G1",
+        "groupId": "G",
+        "position": 1,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "G2",
+        "groupId": "G",
+        "position": 2,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "G3",
+        "groupId": "G",
+        "position": 3,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "G4",
+        "groupId": "G",
+        "position": 4,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "H1",
+        "groupId": "H",
+        "position": 1,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "H2",
+        "groupId": "H",
+        "position": 2,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "H3",
+        "groupId": "H",
+        "position": 3,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      },
+      {
+        "id": "H4",
+        "groupId": "H",
+        "position": 4,
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
+      }
+    ],
+    "matches": [
+      {
+        "id": "group-A-1-2",
+        "type": "group",
+        "groupId": "A",
+        "round": 1,
+        "label": "A1 vs A2",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "A1"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "A2"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-A-1-3",
+        "type": "group",
+        "groupId": "A",
+        "round": 1,
+        "label": "A1 vs A3",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "A1"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "A3"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-A-1-4",
+        "type": "group",
+        "groupId": "A",
+        "round": 1,
+        "label": "A1 vs A4",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "A1"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "A4"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-A-2-3",
+        "type": "group",
+        "groupId": "A",
+        "round": 1,
+        "label": "A2 vs A3",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "A2"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "A3"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-A-2-4",
+        "type": "group",
+        "groupId": "A",
+        "round": 1,
+        "label": "A2 vs A4",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "A2"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "A4"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-A-3-4",
+        "type": "group",
+        "groupId": "A",
+        "round": 1,
+        "label": "A3 vs A4",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "A3"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "A4"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-B-1-2",
+        "type": "group",
+        "groupId": "B",
+        "round": 1,
+        "label": "B1 vs B2",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "B1"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "B2"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-B-1-3",
+        "type": "group",
+        "groupId": "B",
+        "round": 1,
+        "label": "B1 vs B3",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "B1"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "B3"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-B-1-4",
+        "type": "group",
+        "groupId": "B",
+        "round": 1,
+        "label": "B1 vs B4",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "B1"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "B4"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-B-2-3",
+        "type": "group",
+        "groupId": "B",
+        "round": 1,
+        "label": "B2 vs B3",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "B2"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "B3"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-B-2-4",
+        "type": "group",
+        "groupId": "B",
+        "round": 1,
+        "label": "B2 vs B4",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "B2"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "B4"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-B-3-4",
+        "type": "group",
+        "groupId": "B",
+        "round": 1,
+        "label": "B3 vs B4",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "B3"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "B4"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-C-1-2",
+        "type": "group",
+        "groupId": "C",
+        "round": 1,
+        "label": "C1 vs C2",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "C1"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "C2"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-C-1-3",
+        "type": "group",
+        "groupId": "C",
+        "round": 1,
+        "label": "C1 vs C3",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "C1"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "C3"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-C-1-4",
+        "type": "group",
+        "groupId": "C",
+        "round": 1,
+        "label": "C1 vs C4",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "C1"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "C4"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-C-2-3",
+        "type": "group",
+        "groupId": "C",
+        "round": 1,
+        "label": "C2 vs C3",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "C2"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "C3"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-C-2-4",
+        "type": "group",
+        "groupId": "C",
+        "round": 1,
+        "label": "C2 vs C4",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "C2"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "C4"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-C-3-4",
+        "type": "group",
+        "groupId": "C",
+        "round": 1,
+        "label": "C3 vs C4",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "C3"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "C4"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-D-1-2",
+        "type": "group",
+        "groupId": "D",
+        "round": 1,
+        "label": "D1 vs D2",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "D1"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "D2"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-D-1-3",
+        "type": "group",
+        "groupId": "D",
+        "round": 1,
+        "label": "D1 vs D3",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "D1"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "D3"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-D-1-4",
+        "type": "group",
+        "groupId": "D",
+        "round": 1,
+        "label": "D1 vs D4",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "D1"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "D4"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-D-2-3",
+        "type": "group",
+        "groupId": "D",
+        "round": 1,
+        "label": "D2 vs D3",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "D2"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "D3"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-D-2-4",
+        "type": "group",
+        "groupId": "D",
+        "round": 1,
+        "label": "D2 vs D4",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "D2"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "D4"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-D-3-4",
+        "type": "group",
+        "groupId": "D",
+        "round": 1,
+        "label": "D3 vs D4",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "D3"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "D4"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-E-1-2",
+        "type": "group",
+        "groupId": "E",
+        "round": 1,
+        "label": "E1 vs E2",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "E1"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "E2"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-E-1-3",
+        "type": "group",
+        "groupId": "E",
+        "round": 1,
+        "label": "E1 vs E3",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "E1"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "E3"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-E-1-4",
+        "type": "group",
+        "groupId": "E",
+        "round": 1,
+        "label": "E1 vs E4",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "E1"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "E4"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-E-2-3",
+        "type": "group",
+        "groupId": "E",
+        "round": 1,
+        "label": "E2 vs E3",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "E2"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "E3"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-E-2-4",
+        "type": "group",
+        "groupId": "E",
+        "round": 1,
+        "label": "E2 vs E4",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "E2"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "E4"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-E-3-4",
+        "type": "group",
+        "groupId": "E",
+        "round": 1,
+        "label": "E3 vs E4",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "E3"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "E4"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-F-1-2",
+        "type": "group",
+        "groupId": "F",
+        "round": 1,
+        "label": "F1 vs F2",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "F1"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "F2"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-F-1-3",
+        "type": "group",
+        "groupId": "F",
+        "round": 1,
+        "label": "F1 vs F3",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "F1"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "F3"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-F-1-4",
+        "type": "group",
+        "groupId": "F",
+        "round": 1,
+        "label": "F1 vs F4",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "F1"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "F4"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-F-2-3",
+        "type": "group",
+        "groupId": "F",
+        "round": 1,
+        "label": "F2 vs F3",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "F2"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "F3"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-F-2-4",
+        "type": "group",
+        "groupId": "F",
+        "round": 1,
+        "label": "F2 vs F4",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "F2"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "F4"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-F-3-4",
+        "type": "group",
+        "groupId": "F",
+        "round": 1,
+        "label": "F3 vs F4",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "F3"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "F4"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-G-1-2",
+        "type": "group",
+        "groupId": "G",
+        "round": 1,
+        "label": "G1 vs G2",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "G1"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "G2"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-G-1-3",
+        "type": "group",
+        "groupId": "G",
+        "round": 1,
+        "label": "G1 vs G3",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "G1"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "G3"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-G-1-4",
+        "type": "group",
+        "groupId": "G",
+        "round": 1,
+        "label": "G1 vs G4",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "G1"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "G4"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-G-2-3",
+        "type": "group",
+        "groupId": "G",
+        "round": 1,
+        "label": "G2 vs G3",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "G2"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "G3"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-G-2-4",
+        "type": "group",
+        "groupId": "G",
+        "round": 1,
+        "label": "G2 vs G4",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "G2"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "G4"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-G-3-4",
+        "type": "group",
+        "groupId": "G",
+        "round": 1,
+        "label": "G3 vs G4",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "G3"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "G4"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-H-1-2",
+        "type": "group",
+        "groupId": "H",
+        "round": 1,
+        "label": "H1 vs H2",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "H1"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "H2"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-H-1-3",
+        "type": "group",
+        "groupId": "H",
+        "round": 1,
+        "label": "H1 vs H3",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "H1"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "H3"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-H-1-4",
+        "type": "group",
+        "groupId": "H",
+        "round": 1,
+        "label": "H1 vs H4",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "H1"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "H4"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-H-2-3",
+        "type": "group",
+        "groupId": "H",
+        "round": 1,
+        "label": "H2 vs H3",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "H2"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "H3"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-H-2-4",
+        "type": "group",
+        "groupId": "H",
+        "round": 1,
+        "label": "H2 vs H4",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "H2"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "H4"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "group-H-3-4",
+        "type": "group",
+        "groupId": "H",
+        "round": 1,
+        "label": "H3 vs H4",
+        "team1Ref": {
+          "kind": "team",
+          "teamId": "H3"
+        },
+        "team2Ref": {
+          "kind": "team",
+          "teamId": "H4"
+        },
+        "team1Resolved": true,
+        "team2Resolved": true,
+        "status": "unscheduled"
+      },
+      {
+        "id": "vf1",
+        "type": "quarterfinal",
+        "round": 1,
+        "label": "VF1",
+        "team1Ref": {
+          "kind": "groupWinner",
+          "groupId": "A"
+        },
+        "team2Ref": {
+          "kind": "groupWinner",
+          "groupId": "H"
+        },
+        "team1Resolved": false,
+        "team2Resolved": false,
+        "status": "unscheduled"
+      },
+      {
+        "id": "vf2",
+        "type": "quarterfinal",
+        "round": 1,
+        "label": "VF2",
+        "team1Ref": {
+          "kind": "groupWinner",
+          "groupId": "B"
+        },
+        "team2Ref": {
+          "kind": "groupWinner",
+          "groupId": "G"
+        },
+        "team1Resolved": false,
+        "team2Resolved": false,
+        "status": "unscheduled"
+      },
+      {
+        "id": "vf3",
+        "type": "quarterfinal",
+        "round": 1,
+        "label": "VF3",
+        "team1Ref": {
+          "kind": "groupWinner",
+          "groupId": "C"
+        },
+        "team2Ref": {
+          "kind": "groupWinner",
+          "groupId": "F"
+        },
+        "team1Resolved": false,
+        "team2Resolved": false,
+        "status": "unscheduled"
+      },
+      {
+        "id": "vf4",
+        "type": "quarterfinal",
+        "round": 1,
+        "label": "VF4",
+        "team1Ref": {
+          "kind": "groupWinner",
+          "groupId": "D"
+        },
+        "team2Ref": {
+          "kind": "groupWinner",
+          "groupId": "E"
+        },
+        "team1Resolved": false,
+        "team2Resolved": false,
+        "status": "unscheduled"
+      },
+      {
+        "id": "sf1",
+        "type": "semifinal",
+        "round": 2,
+        "label": "HF1",
+        "team1Ref": {
+          "kind": "matchWinner",
+          "matchId": "vf1"
+        },
+        "team2Ref": {
+          "kind": "matchWinner",
+          "matchId": "vf4"
+        },
+        "team1Resolved": false,
+        "team2Resolved": false,
+        "status": "unscheduled"
+      },
+      {
+        "id": "sf2",
+        "type": "semifinal",
+        "round": 2,
+        "label": "HF2",
+        "team1Ref": {
+          "kind": "matchWinner",
+          "matchId": "vf2"
+        },
+        "team2Ref": {
+          "kind": "matchWinner",
+          "matchId": "vf3"
+        },
+        "team1Resolved": false,
+        "team2Resolved": false,
+        "status": "unscheduled"
+      },
+      {
+        "id": "final",
+        "type": "final",
+        "round": 3,
+        "label": "Finale",
+        "team1Ref": {
+          "kind": "matchWinner",
+          "matchId": "sf1"
+        },
+        "team2Ref": {
+          "kind": "matchWinner",
+          "matchId": "sf2"
+        },
+        "team1Resolved": false,
+        "team2Resolved": false,
+        "status": "unscheduled"
+      },
+      {
+        "id": "third-place",
+        "type": "thirdPlace",
+        "round": 4,
+        "label": "Kleines Finale",
+        "team1Ref": {
+          "kind": "matchLoser",
+          "matchId": "sf1"
+        },
+        "team2Ref": {
+          "kind": "matchLoser",
+          "matchId": "sf2"
+        },
+        "team1Resolved": false,
+        "team2Resolved": false,
+        "status": "unscheduled"
+      }
+    ],
+    "slots": [],
+    "dayConfigs": [],
+    "koFormatSettings": {
+      "quarterfinal": "short",
+      "semifinal": "long",
+      "final": "long"
+    }
+  }
+}

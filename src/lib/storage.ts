@@ -36,7 +36,7 @@ function upgradeState(state: AppState): AppState {
  * Prüft grob, ob ein geparstes JSON-Objekt wie ein gültiger App-Zustand
  * aussieht (Teams/Matches vorhanden), bevor es übernommen wird.
  */
-function isValidAppStateShape(value: unknown): value is AppState {
+export function isValidAppStateShape(value: unknown): value is AppState {
   if (!value || typeof value !== 'object') return false
   const candidate = value as Partial<AppState>
   return Array.isArray(candidate.teams) && candidate.teams.length > 0 && Array.isArray(candidate.matches)
@@ -49,6 +49,16 @@ function withArrayDefaults(state: AppState): AppState {
     slots: state.slots ?? [],
     dayConfigs: state.dayConfigs ?? [],
   }
+}
+
+/**
+ * Bringt einen (z.B. importierten oder von der Publish-Datei geladenen)
+ * App-Zustand auf den aktuellen Stand - ergänzt fehlende Felder aus älteren
+ * Versionen. Wirft nicht, prüft die Grundform aber nicht selbst (siehe
+ * isValidAppStateShape).
+ */
+export function normalizeState(state: AppState): AppState {
+  return upgradeState(withArrayDefaults(state))
 }
 
 export function loadState(): AppState {

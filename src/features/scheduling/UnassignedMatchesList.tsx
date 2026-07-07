@@ -1,5 +1,6 @@
 import type { Match, Team } from '../../types'
 import { getSlotCellLines } from '../../lib/scheduleDisplay'
+import { useCanEdit } from '../../state/AuthContext'
 
 interface UnassignedMatchesListProps {
   groupMatches: Match[]
@@ -14,16 +15,21 @@ function MatchListItem({
   match,
   teams,
   allMatches,
+  canEdit,
   onAssign,
 }: {
   match: Match
   teams: Team[]
   allMatches: Match[]
+  canEdit: boolean
   onAssign: (matchId: string) => void
 }) {
   const lines = getSlotCellLines(match, teams, allMatches)
   return (
-    <li onDoubleClick={() => onAssign(match.id)}>
+    <li
+      className={canEdit ? undefined : 'unassigned-matches__item--readonly'}
+      onDoubleClick={canEdit ? () => onAssign(match.id) : undefined}
+    >
       <span className="unassigned-matches__positions">{lines.line1}</span>
       <span className="unassigned-matches__names">
         {lines.team1Text} vs. {lines.team2Text}
@@ -40,6 +46,7 @@ export default function UnassignedMatchesList({
   hasSelectedSlot,
   onAssign,
 }: UnassignedMatchesListProps) {
+  const canEdit = useCanEdit()
   const matchesByGroup = new Map<string, Match[]>()
   for (const match of groupMatches) {
     const key = match.groupId ?? ''
@@ -53,9 +60,11 @@ export default function UnassignedMatchesList({
     <div className="unassigned-matches">
       <h3>Noch nicht verplante Spiele</h3>
       <p className="unassigned-matches__hint">
-        {hasSelectedSlot
-          ? 'Doppelklick auf ein Match weist es dem ausgewählten Slot zu.'
-          : 'Zuerst einen freien Slot im Plan auswählen.'}
+        {!canEdit
+          ? 'Nur im eingeloggten Zustand bearbeitbar.'
+          : hasSelectedSlot
+            ? 'Doppelklick auf ein Match weist es dem ausgewählten Slot zu.'
+            : 'Zuerst einen freien Slot im Plan auswählen.'}
       </p>
 
       <div className="unassigned-matches__section">
@@ -70,6 +79,7 @@ export default function UnassignedMatchesList({
                   match={match}
                   teams={teams}
                   allMatches={allMatches}
+                  canEdit={canEdit}
                   onAssign={onAssign}
                 />
               ))}
@@ -87,6 +97,7 @@ export default function UnassignedMatchesList({
               match={match}
               teams={teams}
               allMatches={allMatches}
+              canEdit={canEdit}
               onAssign={onAssign}
             />
           ))}

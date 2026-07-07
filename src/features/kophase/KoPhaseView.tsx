@@ -1,6 +1,7 @@
 import { useLayoutEffect, useRef, useState } from 'react'
 import type { KoFormatSettings, MatchFormatMode } from '../../types'
 import { useAppState } from '../../state/AppStateContext'
+import { useCanEdit } from '../../state/AuthContext'
 import { generateKoPdf } from '../../lib/pdf/koPdf'
 import KoMatchCard from './KoMatchCard'
 
@@ -15,6 +16,7 @@ const FORMAT_SELECT_ITEMS: { round: keyof KoFormatSettings; label: string }[] = 
 
 export default function KoPhaseView() {
   const { state, setKoFormatSetting } = useAppState()
+  const canEdit = useCanEdit()
   const findMatch = (id: string) => state.matches.find((match) => match.id === id)
   const finalMatch = findMatch('final')
   const thirdPlaceMatch = findMatch('third-place')
@@ -74,23 +76,25 @@ export default function KoPhaseView() {
         </button>
       </div>
 
-      <div className="ko-format-settings">
-        <span className="ko-format-settings__label">Spielformat je Runde:</span>
-        {FORMAT_SELECT_ITEMS.map(({ round, label }) => (
-          <label key={round} className="ko-format-settings__item">
-            {label}
-            <select
-              value={state.koFormatSettings[round]}
-              onChange={(event) =>
-                setKoFormatSetting(round, event.target.value as MatchFormatMode)
-              }
-            >
-              <option value="short">2 Sätze bis 4 (Tiebreak bis 7)</option>
-              <option value="long">2 Sätze bis 6 (Tiebreak bis 10)</option>
-            </select>
-          </label>
-        ))}
-      </div>
+      {canEdit && (
+        <div className="ko-format-settings">
+          <span className="ko-format-settings__label">Spielformat je Runde:</span>
+          {FORMAT_SELECT_ITEMS.map(({ round, label }) => (
+            <label key={round} className="ko-format-settings__item">
+              {label}
+              <select
+                value={state.koFormatSettings[round]}
+                onChange={(event) =>
+                  setKoFormatSetting(round, event.target.value as MatchFormatMode)
+                }
+              >
+                <option value="short">2 Sätze bis 4 (Tiebreak bis 7)</option>
+                <option value="long">2 Sätze bis 6 (Tiebreak bis 10)</option>
+              </select>
+            </label>
+          ))}
+        </div>
+      )}
 
       <div className="ko-bracket">
         <div className="ko-bracket__round">

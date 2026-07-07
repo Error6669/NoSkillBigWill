@@ -1,6 +1,8 @@
 import { useRef, useState, type ChangeEvent } from 'react'
 import { useAuth } from '../../state/AuthContext'
+import { clearStoredGithubToken, getStoredGithubToken, setStoredGithubToken, type PublishResult } from '../../lib/publish'
 import LoginModal from './LoginModal'
+import GithubTokenModal from './GithubTokenModal'
 
 interface AppHeaderProps {
   onExport: () => void
@@ -8,6 +10,7 @@ interface AppHeaderProps {
   onDownloadMyGames: () => void
   onLoadSampleData: () => void
   onReset: () => void
+  onPublish: (token: string) => Promise<PublishResult>
 }
 
 export default function AppHeader({
@@ -16,9 +19,12 @@ export default function AppHeader({
   onDownloadMyGames,
   onLoadSampleData,
   onReset,
+  onPublish,
 }: AppHeaderProps) {
   const { isEditMode, login, logout } = useAuth()
   const [loginOpen, setLoginOpen] = useState(false)
+  const [tokenModalOpen, setTokenModalOpen] = useState(false)
+  const [publishing, setPublishing] = useState(false)
   const fileInputRef = useRef<HTMLInputElement>(null)
 
   const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -27,6 +33,35 @@ export default function AppHeader({
       onImport(file)
     }
     event.target.value = ''
+  }
+
+  const runPublish = async (token: string) => {
+    setPublishing(true)
+    const result = await onPublish(token)
+    setPublishing(false)
+    if (result.success) {
+      alert('Veröffentlicht! Es dauert ca. 30–60 Sekunden, bis die Änderung online sichtbar ist.')
+    } else {
+      if (result.error?.toLowerCase().includes('token')) {
+        clearStoredGithubToken()
+      }
+      alert(`Veröffentlichen fehlgeschlagen: ${result.error ?? 'unbekannter Fehler'}`)
+    }
+  }
+
+  const handlePublishClick = () => {
+    const token = getStoredGithubToken()
+    if (!token) {
+      setTokenModalOpen(true)
+      return
+    }
+    void runPublish(token)
+  }
+
+  const handleTokenSubmit = (token: string) => {
+    setStoredGithubToken(token)
+    setTokenModalOpen(false)
+    void runPublish(token)
   }
 
   return (
@@ -68,6 +103,14 @@ export default function AppHeader({
             <button type="button" className="btn btn--danger" onClick={onReset}>
               Alle Daten löschen
             </button>
+            <button
+              type="button"
+              className="btn btn--primary"
+              disabled={publishing}
+              onClick={handlePublishClick}
+            >
+              {publishing ? 'Veröffentliche…' : 'Veröffentlichen'}
+            </button>
           </>
         )}
         {isEditMode ? (
@@ -82,6 +125,11 @@ export default function AppHeader({
       </div>
 
       <LoginModal open={loginOpen} onClose={() => setLoginOpen(false)} onSubmit={login} />
+      <GithubTokenModal
+        open={tokenModalOpen}
+        onClose={() => setTokenModalOpen(false)}
+        onSubmit={handleTokenSubmit}
+      />
     </header>
   )
 }

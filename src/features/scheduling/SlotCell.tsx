@@ -1,5 +1,6 @@
 import type { Location, Match, Slot } from '../../types'
 import type { SlotCellLines } from '../../lib/scheduleDisplay'
+import { useCanEdit } from '../../state/AuthContext'
 
 interface SlotCellProps {
   slot: Slot
@@ -22,6 +23,7 @@ export default function SlotCell({
   onSelect,
   onUnassign,
 }: SlotCellProps) {
+  const canEdit = useCanEdit()
   const isOccupied = Boolean(match)
 
   const classNames = ['slot-cell']
@@ -29,28 +31,31 @@ export default function SlotCell({
   classNames.push(location === 'Langenstein' ? 'slot-cell--langenstein' : 'slot-cell--mauthausen')
   if (isSelected) classNames.push('slot-cell--selected')
   if (isSwapSelected) classNames.push('slot-cell--swap-selected')
+  if (!canEdit) classNames.push('slot-cell--readonly')
 
   return (
     <div
       className={classNames.join(' ')}
-      onClick={onSelect}
+      onClick={canEdit ? onSelect : undefined}
       role="button"
       tabIndex={0}
       aria-label={`Slot ${slot.startTime}-${slot.endTime}, ${slot.location} Platz ${slot.court}`}
     >
       {isOccupied && lines ? (
         <>
-          <button
-            type="button"
-            className="slot-cell__remove"
-            aria-label="Zuordnung entfernen"
-            onClick={(event) => {
-              event.stopPropagation()
-              onUnassign()
-            }}
-          >
-            ×
-          </button>
+          {canEdit && (
+            <button
+              type="button"
+              className="slot-cell__remove"
+              aria-label="Zuordnung entfernen"
+              onClick={(event) => {
+                event.stopPropagation()
+                onUnassign()
+              }}
+            >
+              ×
+            </button>
+          )}
           <span className="slot-cell__match-positions">{lines.line1}</span>
           <span className="slot-cell__match-names">
             {lines.team1Text} vs.
