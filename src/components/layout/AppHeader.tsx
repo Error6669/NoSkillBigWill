@@ -81,7 +81,7 @@ export default function AppHeader({
   return (
     <header className="app-header">
       <div className="app-header__title">
-        <h1>Turnierplanung</h1>
+        <h1>NoSkillBigWill</h1>
         <p className="app-header__subtitle">Doppel-Tennisturnier</p>
       </div>
       <div className="app-header__actions">
