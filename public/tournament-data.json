@@ -1,262 +1,262 @@
 {
-  "publishedAt": "2026-07-07T23:02:18.300Z",
+  "publishedAt": "2026-07-07T23:03:45.347Z",
   "state": {
     "teams": [
       {
         "id": "A1",
         "groupId": "A",
         "position": 1,
-        "player1Name": "Klaus",
-        "player2Name": "Mario",
-        "displayName": "Klaus / Mario"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "A2",
         "groupId": "A",
         "position": 2,
-        "player1Name": "Thomas",
-        "player2Name": "Alexander",
-        "displayName": "Thomas / Alexander"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "A3",
         "groupId": "A",
         "position": 3,
-        "player1Name": "Peter",
-        "player2Name": "Stefan",
-        "displayName": "Peter / Stefan"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "A4",
         "groupId": "A",
         "position": 4,
-        "player1Name": "Anna",
-        "player2Name": "Julia",
-        "displayName": "Anna / Julia"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "B1",
         "groupId": "B",
         "position": 1,
-        "player1Name": "Max",
-        "player2Name": "Moritz",
-        "displayName": "Max / Moritz"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "B2",
         "groupId": "B",
         "position": 2,
-        "player1Name": "Lisa",
-        "player2Name": "Nora",
-        "displayName": "Lisa / Nora"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "B3",
         "groupId": "B",
         "position": 3,
-        "player1Name": "Tom",
-        "player2Name": "Jakob",
-        "displayName": "Tom / Jakob"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "B4",
         "groupId": "B",
         "position": 4,
-        "player1Name": "Sabine",
-        "player2Name": "Christina",
-        "displayName": "Sabine / Christina"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "C1",
         "groupId": "C",
         "position": 1,
-        "player1Name": "Michael",
-        "player2Name": "Andreas",
-        "displayName": "Michael / Andreas"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "C2",
         "groupId": "C",
         "position": 2,
-        "player1Name": "Georg",
-        "player2Name": "Franz",
-        "displayName": "Georg / Franz"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "C3",
         "groupId": "C",
         "position": 3,
-        "player1Name": "Elke",
-        "player2Name": "Petra",
-        "displayName": "Elke / Petra"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "C4",
         "groupId": "C",
         "position": 4,
-        "player1Name": "Herbert",
-        "player2Name": "Karl",
-        "displayName": "Herbert / Karl"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "D1",
         "groupId": "D",
         "position": 1,
-        "player1Name": "Sepp",
-        "player2Name": "Hans",
-        "displayName": "Sepp / Hans"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "D2",
         "groupId": "D",
         "position": 2,
-        "player1Name": "Markus",
-        "player2Name": "Daniel",
-        "displayName": "Markus / Daniel"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "D3",
         "groupId": "D",
         "position": 3,
-        "player1Name": "Verena",
-        "player2Name": "Sonja",
-        "displayName": "Verena / Sonja"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "D4",
         "groupId": "D",
         "position": 4,
-        "player1Name": "Martina",
-        "player2Name": "Bettina",
-        "displayName": "Martina / Bettina"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "E1",
         "groupId": "E",
         "position": 1,
-        "player1Name": "Robert",
-        "player2Name": "Werner",
-        "displayName": "Robert / Werner"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "E2",
         "groupId": "E",
         "position": 2,
-        "player1Name": "Gerhard",
-        "player2Name": "Helmut",
-        "displayName": "Gerhard / Helmut"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "E3",
         "groupId": "E",
         "position": 3,
-        "player1Name": "Claudia",
-        "player2Name": "Ingrid",
-        "displayName": "Claudia / Ingrid"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "E4",
         "groupId": "E",
         "position": 4,
-        "player1Name": "Renate",
-        "player2Name": "Florian",
-        "displayName": "Renate / Florian"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "F1",
         "groupId": "F",
         "position": 1,
-        "player1Name": "Sebastian",
-        "player2Name": "Patrick",
-        "displayName": "Sebastian / Patrick"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "F2",
         "groupId": "F",
         "position": 2,
-        "player1Name": "Lukas",
-        "player2Name": "Simon",
-        "displayName": "Lukas / Simon"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "F3",
         "groupId": "F",
         "position": 3,
-        "player1Name": "David",
-        "player2Name": "Manuel",
-        "displayName": "David / Manuel"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "F4",
         "groupId": "F",
         "position": 4,
-        "player1Name": "Fabian",
-        "player2Name": "Nicole",
-        "displayName": "Fabian / Nicole"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "G1",
         "groupId": "G",
         "position": 1,
-        "player1Name": "Sandra",
-        "player2Name": "Melanie",
-        "displayName": "Sandra / Melanie"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "G2",
         "groupId": "G",
         "position": 2,
-        "player1Name": "Jasmin",
-        "player2Name": "Wolfgang",
-        "displayName": "Jasmin / Wolfgang"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "G3",
         "groupId": "G",
         "position": 3,
-        "player1Name": "Rudolf",
-        "player2Name": "Alfred",
-        "displayName": "Rudolf / Alfred"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "G4",
         "groupId": "G",
         "position": 4,
-        "player1Name": "Kurt",
-        "player2Name": "Bernd",
-        "displayName": "Kurt / Bernd"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "H1",
         "groupId": "H",
         "position": 1,
-        "player1Name": "Dieter",
-        "player2Name": "Johann",
-        "displayName": "Dieter / Johann"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "H2",
         "groupId": "H",
         "position": 2,
-        "player1Name": "Josef",
-        "player2Name": "Monika",
-        "displayName": "Josef / Monika"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "H3",
         "groupId": "H",
         "position": 3,
-        "player1Name": "Brigitte",
-        "player2Name": "Ursula",
-        "displayName": "Brigitte / Ursula"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       },
       {
         "id": "H4",
         "groupId": "H",
         "position": 4,
-        "player1Name": "Gabriele",
-        "player2Name": "Walter",
-        "displayName": "Gabriele / Walter"
+        "player1Name": "",
+        "player2Name": "",
+        "displayName": ""
       }
     ],
     "matches": [
@@ -276,27 +276,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 4,
-              "team2Games": 2,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 4,
-              "team2Games": 1,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 8,
-          "gamesTeam2": 3,
-          "winnerTeamId": "A1"
-        },
-        "winner": "A1",
-        "loser": "A2"
+        "status": "unscheduled"
       },
       {
         "id": "group-A-1-3",
@@ -314,31 +294,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 4,
-              "team2Games": 2,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 2,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "matchTiebreak": {
-            "team1Points": 8,
-            "team2Points": 5
-          },
-          "walkover": false,
-          "gamesTeam1": 6,
-          "gamesTeam2": 6,
-          "winnerTeamId": "A1"
-        },
-        "winner": "A1",
-        "loser": "A3"
+        "status": "unscheduled"
       },
       {
         "id": "group-A-1-4",
@@ -356,31 +312,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 4,
-              "team2Games": 2,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 1,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "matchTiebreak": {
-            "team1Points": 3,
-            "team2Points": 8
-          },
-          "walkover": false,
-          "gamesTeam1": 5,
-          "gamesTeam2": 6,
-          "winnerTeamId": "A4"
-        },
-        "winner": "A4",
-        "loser": "A1"
+        "status": "unscheduled"
       },
       {
         "id": "group-A-2-3",
@@ -398,27 +330,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 2,
-              "team2Games": 4,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 3,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 5,
-          "gamesTeam2": 8,
-          "winnerTeamId": "A3"
-        },
-        "winner": "A3",
-        "loser": "A2"
+        "status": "unscheduled"
       },
       {
         "id": "group-A-2-4",
@@ -436,27 +348,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 2,
-              "team2Games": 4,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 0,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 2,
-          "gamesTeam2": 8,
-          "winnerTeamId": "A4"
-        },
-        "winner": "A4",
-        "loser": "A2"
+        "status": "unscheduled"
       },
       {
         "id": "group-A-3-4",
@@ -474,31 +366,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 4,
-              "team2Games": 0,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 3,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "matchTiebreak": {
-            "team1Points": 3,
-            "team2Points": 9
-          },
-          "walkover": false,
-          "gamesTeam1": 7,
-          "gamesTeam2": 4,
-          "winnerTeamId": "A4"
-        },
-        "winner": "A4",
-        "loser": "A3"
+        "status": "unscheduled"
       },
       {
         "id": "group-B-1-2",
@@ -516,31 +384,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 4,
-              "team2Games": 1,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 4,
-              "team2Games": 5,
-              "tiebreak": true
-            }
-          ],
-          "matchTiebreak": {
-            "team1Points": 8,
-            "team2Points": 3
-          },
-          "walkover": false,
-          "gamesTeam1": 8,
-          "gamesTeam2": 6,
-          "winnerTeamId": "B1"
-        },
-        "winner": "B1",
-        "loser": "B2"
+        "status": "unscheduled"
       },
       {
         "id": "group-B-1-3",
@@ -558,31 +402,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 5,
-              "team2Games": 4,
-              "tiebreak": true
-            },
-            {
-              "team1Games": 4,
-              "team2Games": 5,
-              "tiebreak": true
-            }
-          ],
-          "matchTiebreak": {
-            "team1Points": 3,
-            "team2Points": 7
-          },
-          "walkover": false,
-          "gamesTeam1": 9,
-          "gamesTeam2": 9,
-          "winnerTeamId": "B3"
-        },
-        "winner": "B3",
-        "loser": "B1"
+        "status": "unscheduled"
       },
       {
         "id": "group-B-1-4",
@@ -600,27 +420,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 0,
-              "team2Games": 4,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 3,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 3,
-          "gamesTeam2": 8,
-          "winnerTeamId": "B4"
-        },
-        "winner": "B4",
-        "loser": "B1"
+        "status": "unscheduled"
       },
       {
         "id": "group-B-2-3",
@@ -638,27 +438,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 4,
-              "team2Games": 0,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 4,
-              "team2Games": 0,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 8,
-          "gamesTeam2": 0,
-          "winnerTeamId": "B2"
-        },
-        "winner": "B2",
-        "loser": "B3"
+        "status": "unscheduled"
       },
       {
         "id": "group-B-2-4",
@@ -676,27 +456,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 5,
-              "team2Games": 4,
-              "tiebreak": true
-            },
-            {
-              "team1Games": 4,
-              "team2Games": 3,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 9,
-          "gamesTeam2": 7,
-          "winnerTeamId": "B2"
-        },
-        "winner": "B2",
-        "loser": "B4"
+        "status": "unscheduled"
       },
       {
         "id": "group-B-3-4",
@@ -714,31 +474,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 5,
-              "team2Games": 4,
-              "tiebreak": true
-            },
-            {
-              "team1Games": 0,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "matchTiebreak": {
-            "team1Points": 3,
-            "team2Points": 8
-          },
-          "walkover": false,
-          "gamesTeam1": 5,
-          "gamesTeam2": 8,
-          "winnerTeamId": "B4"
-        },
-        "winner": "B4",
-        "loser": "B3"
+        "status": "unscheduled"
       },
       {
         "id": "group-C-1-2",
@@ -756,27 +492,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 0,
-              "team2Games": 4,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 0,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 0,
-          "gamesTeam2": 8,
-          "winnerTeamId": "C2"
-        },
-        "winner": "C2",
-        "loser": "C1"
+        "status": "unscheduled"
       },
       {
         "id": "group-C-1-3",
@@ -794,31 +510,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 4,
-              "team2Games": 2,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 1,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "matchTiebreak": {
-            "team1Points": 1,
-            "team2Points": 9
-          },
-          "walkover": false,
-          "gamesTeam1": 5,
-          "gamesTeam2": 6,
-          "winnerTeamId": "C3"
-        },
-        "winner": "C3",
-        "loser": "C1"
+        "status": "unscheduled"
       },
       {
         "id": "group-C-1-4",
@@ -836,27 +528,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 0,
-              "team2Games": 4,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 1,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 1,
-          "gamesTeam2": 8,
-          "winnerTeamId": "C4"
-        },
-        "winner": "C4",
-        "loser": "C1"
+        "status": "unscheduled"
       },
       {
         "id": "group-C-2-3",
@@ -874,27 +546,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 1,
-              "team2Games": 4,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 1,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 2,
-          "gamesTeam2": 8,
-          "winnerTeamId": "C3"
-        },
-        "winner": "C3",
-        "loser": "C2"
+        "status": "unscheduled"
       },
       {
         "id": "group-C-2-4",
@@ -912,27 +564,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 5,
-              "team2Games": 4,
-              "tiebreak": true
-            },
-            {
-              "team1Games": 4,
-              "team2Games": 0,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 9,
-          "gamesTeam2": 4,
-          "winnerTeamId": "C2"
-        },
-        "winner": "C2",
-        "loser": "C4"
+        "status": "unscheduled"
       },
       {
         "id": "group-C-3-4",
@@ -950,27 +582,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 2,
-              "team2Games": 4,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 1,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 3,
-          "gamesTeam2": 8,
-          "winnerTeamId": "C4"
-        },
-        "winner": "C4",
-        "loser": "C3"
+        "status": "unscheduled"
       },
       {
         "id": "group-D-1-2",
@@ -988,27 +600,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 4,
-              "team2Games": 3,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 4,
-              "team2Games": 2,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 8,
-          "gamesTeam2": 5,
-          "winnerTeamId": "D1"
-        },
-        "winner": "D1",
-        "loser": "D2"
+        "status": "unscheduled"
       },
       {
         "id": "group-D-1-3",
@@ -1026,27 +618,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 3,
-              "team2Games": 4,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 2,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 5,
-          "gamesTeam2": 8,
-          "winnerTeamId": "D3"
-        },
-        "winner": "D3",
-        "loser": "D1"
+        "status": "unscheduled"
       },
       {
         "id": "group-D-1-4",
@@ -1064,31 +636,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 4,
-              "team2Games": 2,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 4,
-              "team2Games": 5,
-              "tiebreak": true
-            }
-          ],
-          "matchTiebreak": {
-            "team1Points": 6,
-            "team2Points": 8
-          },
-          "walkover": false,
-          "gamesTeam1": 8,
-          "gamesTeam2": 7,
-          "winnerTeamId": "D4"
-        },
-        "winner": "D4",
-        "loser": "D1"
+        "status": "unscheduled"
       },
       {
         "id": "group-D-2-3",
@@ -1106,27 +654,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 0,
-              "team2Games": 4,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 3,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 3,
-          "gamesTeam2": 8,
-          "winnerTeamId": "D3"
-        },
-        "winner": "D3",
-        "loser": "D2"
+        "status": "unscheduled"
       },
       {
         "id": "group-D-2-4",
@@ -1144,27 +672,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 5,
-              "team2Games": 4,
-              "tiebreak": true
-            },
-            {
-              "team1Games": 4,
-              "team2Games": 0,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 9,
-          "gamesTeam2": 4,
-          "winnerTeamId": "D2"
-        },
-        "winner": "D2",
-        "loser": "D4"
+        "status": "unscheduled"
       },
       {
         "id": "group-D-3-4",
@@ -1182,27 +690,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 4,
-              "team2Games": 0,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 4,
-              "team2Games": 3,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 8,
-          "gamesTeam2": 3,
-          "winnerTeamId": "D3"
-        },
-        "winner": "D3",
-        "loser": "D4"
+        "status": "unscheduled"
       },
       {
         "id": "group-E-1-2",
@@ -1220,27 +708,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 4,
-              "team2Games": 2,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 4,
-              "team2Games": 3,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 8,
-          "gamesTeam2": 5,
-          "winnerTeamId": "E1"
-        },
-        "winner": "E1",
-        "loser": "E2"
+        "status": "unscheduled"
       },
       {
         "id": "group-E-1-3",
@@ -1258,27 +726,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 0,
-              "team2Games": 4,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 0,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 0,
-          "gamesTeam2": 8,
-          "winnerTeamId": "E3"
-        },
-        "winner": "E3",
-        "loser": "E1"
+        "status": "unscheduled"
       },
       {
         "id": "group-E-1-4",
@@ -1296,27 +744,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 1,
-              "team2Games": 4,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 4,
-              "team2Games": 5,
-              "tiebreak": true
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 5,
-          "gamesTeam2": 9,
-          "winnerTeamId": "E4"
-        },
-        "winner": "E4",
-        "loser": "E1"
+        "status": "unscheduled"
       },
       {
         "id": "group-E-2-3",
@@ -1334,31 +762,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 5,
-              "team2Games": 4,
-              "tiebreak": true
-            },
-            {
-              "team1Games": 2,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "matchTiebreak": {
-            "team1Points": 3,
-            "team2Points": 8
-          },
-          "walkover": false,
-          "gamesTeam1": 7,
-          "gamesTeam2": 8,
-          "winnerTeamId": "E3"
-        },
-        "winner": "E3",
-        "loser": "E2"
+        "status": "unscheduled"
       },
       {
         "id": "group-E-2-4",
@@ -1376,31 +780,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 5,
-              "team2Games": 4,
-              "tiebreak": true
-            },
-            {
-              "team1Games": 1,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "matchTiebreak": {
-            "team1Points": 2,
-            "team2Points": 9
-          },
-          "walkover": false,
-          "gamesTeam1": 6,
-          "gamesTeam2": 8,
-          "winnerTeamId": "E4"
-        },
-        "winner": "E4",
-        "loser": "E2"
+        "status": "unscheduled"
       },
       {
         "id": "group-E-3-4",
@@ -1418,27 +798,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 4,
-              "team2Games": 1,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 4,
-              "team2Games": 1,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 8,
-          "gamesTeam2": 2,
-          "winnerTeamId": "E3"
-        },
-        "winner": "E3",
-        "loser": "E4"
+        "status": "unscheduled"
       },
       {
         "id": "group-F-1-2",
@@ -1456,31 +816,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 4,
-              "team2Games": 0,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 2,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "matchTiebreak": {
-            "team1Points": 9,
-            "team2Points": 5
-          },
-          "walkover": false,
-          "gamesTeam1": 6,
-          "gamesTeam2": 4,
-          "winnerTeamId": "F1"
-        },
-        "winner": "F1",
-        "loser": "F2"
+        "status": "unscheduled"
       },
       {
         "id": "group-F-1-3",
@@ -1498,27 +834,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 4,
-              "team2Games": 1,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 4,
-              "team2Games": 2,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 8,
-          "gamesTeam2": 3,
-          "winnerTeamId": "F1"
-        },
-        "winner": "F1",
-        "loser": "F3"
+        "status": "unscheduled"
       },
       {
         "id": "group-F-1-4",
@@ -1536,27 +852,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 4,
-              "team2Games": 3,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 5,
-              "team2Games": 4,
-              "tiebreak": true
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 9,
-          "gamesTeam2": 7,
-          "winnerTeamId": "F1"
-        },
-        "winner": "F1",
-        "loser": "F4"
+        "status": "unscheduled"
       },
       {
         "id": "group-F-2-3",
@@ -1574,27 +870,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 4,
-              "team2Games": 1,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 4,
-              "team2Games": 3,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 8,
-          "gamesTeam2": 4,
-          "winnerTeamId": "F2"
-        },
-        "winner": "F2",
-        "loser": "F3"
+        "status": "unscheduled"
       },
       {
         "id": "group-F-2-4",
@@ -1612,27 +888,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 4,
-              "team2Games": 0,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 4,
-              "team2Games": 3,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 8,
-          "gamesTeam2": 3,
-          "winnerTeamId": "F2"
-        },
-        "winner": "F2",
-        "loser": "F4"
+        "status": "unscheduled"
       },
       {
         "id": "group-F-3-4",
@@ -1650,27 +906,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 2,
-              "team2Games": 4,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 0,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 2,
-          "gamesTeam2": 8,
-          "winnerTeamId": "F4"
-        },
-        "winner": "F4",
-        "loser": "F3"
+        "status": "unscheduled"
       },
       {
         "id": "group-G-1-2",
@@ -1688,27 +924,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 5,
-              "team2Games": 4,
-              "tiebreak": true
-            },
-            {
-              "team1Games": 4,
-              "team2Games": 1,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 9,
-          "gamesTeam2": 5,
-          "winnerTeamId": "G1"
-        },
-        "winner": "G1",
-        "loser": "G2"
+        "status": "unscheduled"
       },
       {
         "id": "group-G-1-3",
@@ -1726,27 +942,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 5,
-              "team2Games": 4,
-              "tiebreak": true
-            },
-            {
-              "team1Games": 4,
-              "team2Games": 2,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 9,
-          "gamesTeam2": 6,
-          "winnerTeamId": "G1"
-        },
-        "winner": "G1",
-        "loser": "G3"
+        "status": "unscheduled"
       },
       {
         "id": "group-G-1-4",
@@ -1764,31 +960,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 4,
-              "team2Games": 3,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 0,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "matchTiebreak": {
-            "team1Points": 8,
-            "team2Points": 6
-          },
-          "walkover": false,
-          "gamesTeam1": 4,
-          "gamesTeam2": 7,
-          "winnerTeamId": "G1"
-        },
-        "winner": "G1",
-        "loser": "G4"
+        "status": "unscheduled"
       },
       {
         "id": "group-G-2-3",
@@ -1806,27 +978,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 3,
-              "team2Games": 4,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 1,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 4,
-          "gamesTeam2": 8,
-          "winnerTeamId": "G3"
-        },
-        "winner": "G3",
-        "loser": "G2"
+        "status": "unscheduled"
       },
       {
         "id": "group-G-2-4",
@@ -1844,27 +996,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 2,
-              "team2Games": 4,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 0,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 2,
-          "gamesTeam2": 8,
-          "winnerTeamId": "G4"
-        },
-        "winner": "G4",
-        "loser": "G2"
+        "status": "unscheduled"
       },
       {
         "id": "group-G-3-4",
@@ -1882,27 +1014,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 1,
-              "team2Games": 4,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 2,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 3,
-          "gamesTeam2": 8,
-          "winnerTeamId": "G4"
-        },
-        "winner": "G4",
-        "loser": "G3"
+        "status": "unscheduled"
       },
       {
         "id": "group-H-1-2",
@@ -1920,27 +1032,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 2,
-              "team2Games": 4,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 0,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 2,
-          "gamesTeam2": 8,
-          "winnerTeamId": "H2"
-        },
-        "winner": "H2",
-        "loser": "H1"
+        "status": "unscheduled"
       },
       {
         "id": "group-H-1-3",
@@ -1958,27 +1050,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 1,
-              "team2Games": 4,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 4,
-              "team2Games": 5,
-              "tiebreak": true
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 5,
-          "gamesTeam2": 9,
-          "winnerTeamId": "H3"
-        },
-        "winner": "H3",
-        "loser": "H1"
+        "status": "unscheduled"
       },
       {
         "id": "group-H-1-4",
@@ -1996,27 +1068,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 1,
-              "team2Games": 4,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 4,
-              "team2Games": 5,
-              "tiebreak": true
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 5,
-          "gamesTeam2": 9,
-          "winnerTeamId": "H4"
-        },
-        "winner": "H4",
-        "loser": "H1"
+        "status": "unscheduled"
       },
       {
         "id": "group-H-2-3",
@@ -2034,27 +1086,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 1,
-              "team2Games": 4,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 4,
-              "team2Games": 5,
-              "tiebreak": true
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 5,
-          "gamesTeam2": 9,
-          "winnerTeamId": "H3"
-        },
-        "winner": "H3",
-        "loser": "H2"
+        "status": "unscheduled"
       },
       {
         "id": "group-H-2-4",
@@ -2072,27 +1104,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 4,
-              "team2Games": 2,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 4,
-              "team2Games": 2,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 8,
-          "gamesTeam2": 4,
-          "winnerTeamId": "H2"
-        },
-        "winner": "H2",
-        "loser": "H4"
+        "status": "unscheduled"
       },
       {
         "id": "group-H-3-4",
@@ -2110,31 +1122,7 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 4,
-              "team2Games": 0,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 3,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "matchTiebreak": {
-            "team1Points": 3,
-            "team2Points": 7
-          },
-          "walkover": false,
-          "gamesTeam1": 7,
-          "gamesTeam2": 4,
-          "winnerTeamId": "H4"
-        },
-        "winner": "H4",
-        "loser": "H3"
+        "status": "unscheduled"
       },
       {
         "id": "vf1",
@@ -2151,27 +1139,7 @@
         },
         "team1Resolved": false,
         "team2Resolved": false,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 4,
-              "team2Games": 5,
-              "tiebreak": true
-            },
-            {
-              "team1Games": 0,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 4,
-          "gamesTeam2": 9,
-          "winnerTeamId": "H3"
-        },
-        "winner": "H3",
-        "loser": "A4"
+        "status": "unscheduled"
       },
       {
         "id": "vf2",
@@ -2188,31 +1156,7 @@
         },
         "team1Resolved": false,
         "team2Resolved": false,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 5,
-              "team2Games": 4,
-              "tiebreak": true
-            },
-            {
-              "team1Games": 4,
-              "team2Games": 5,
-              "tiebreak": true
-            }
-          ],
-          "matchTiebreak": {
-            "team1Points": 1,
-            "team2Points": 9
-          },
-          "walkover": false,
-          "gamesTeam1": 9,
-          "gamesTeam2": 9,
-          "winnerTeamId": "G1"
-        },
-        "winner": "G1",
-        "loser": "B2"
+        "status": "unscheduled"
       },
       {
         "id": "vf3",
@@ -2229,31 +1173,7 @@
         },
         "team1Resolved": false,
         "team2Resolved": false,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 4,
-              "team2Games": 1,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 0,
-              "team2Games": 4,
-              "tiebreak": false
-            }
-          ],
-          "matchTiebreak": {
-            "team1Points": 9,
-            "team2Points": 0
-          },
-          "walkover": false,
-          "gamesTeam1": 4,
-          "gamesTeam2": 5,
-          "winnerTeamId": "C4"
-        },
-        "winner": "C4",
-        "loser": "F1"
+        "status": "unscheduled"
       },
       {
         "id": "vf4",
@@ -2270,27 +1190,7 @@
         },
         "team1Resolved": false,
         "team2Resolved": false,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 2,
-              "team2Games": 4,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 4,
-              "team2Games": 5,
-              "tiebreak": true
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 6,
-          "gamesTeam2": 9,
-          "winnerTeamId": "E3"
-        },
-        "winner": "E3",
-        "loser": "D3"
+        "status": "unscheduled"
       },
       {
         "id": "sf1",
@@ -2307,27 +1207,7 @@
         },
         "team1Resolved": false,
         "team2Resolved": false,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 6,
-              "team2Games": 2,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 6,
-              "team2Games": 5,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 12,
-          "gamesTeam2": 7,
-          "winnerTeamId": "H3"
-        },
-        "winner": "H3",
-        "loser": "E3"
+        "status": "unscheduled"
       },
       {
         "id": "sf2",
@@ -2344,27 +1224,7 @@
         },
         "team1Resolved": false,
         "team2Resolved": false,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 6,
-              "team2Games": 7,
-              "tiebreak": true
-            },
-            {
-              "team1Games": 5,
-              "team2Games": 6,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 11,
-          "gamesTeam2": 13,
-          "winnerTeamId": "C4"
-        },
-        "winner": "C4",
-        "loser": "G1"
+        "status": "unscheduled"
       },
       {
         "id": "final",
@@ -2381,27 +1241,7 @@
         },
         "team1Resolved": false,
         "team2Resolved": false,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 0,
-              "team2Games": 6,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 2,
-              "team2Games": 6,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 2,
-          "gamesTeam2": 12,
-          "winnerTeamId": "C4"
-        },
-        "winner": "C4",
-        "loser": "H3"
+        "status": "unscheduled"
       },
       {
         "id": "third-place",
@@ -2418,27 +1258,7 @@
         },
         "team1Resolved": false,
         "team2Resolved": false,
-        "status": "completed",
-        "result": {
-          "sets": [
-            {
-              "team1Games": 6,
-              "team2Games": 1,
-              "tiebreak": false
-            },
-            {
-              "team1Games": 6,
-              "team2Games": 5,
-              "tiebreak": false
-            }
-          ],
-          "walkover": false,
-          "gamesTeam1": 12,
-          "gamesTeam2": 6,
-          "winnerTeamId": "E3"
-        },
-        "winner": "E3",
-        "loser": "G1"
+        "status": "unscheduled"
       }
     ],
     "slots": [],
