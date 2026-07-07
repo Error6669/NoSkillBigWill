@@ -136,6 +136,28 @@ h1, h2, h3 {
   border-color: #d9432e;
 }
 
+.btn--publish {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn--publish__fill {
+  position: absolute;
+  inset: 0;
+  width: 0%;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.btn--publish__fill--active {
+  width: 100%;
+  transition: width 60s linear;
+}
+
+.btn--publish__label {
+  position: relative;
+  z-index: 1;
+}
+
 .tab-nav {
   display: flex;
   gap: 4px;

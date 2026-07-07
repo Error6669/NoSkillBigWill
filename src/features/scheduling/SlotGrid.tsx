@@ -1,6 +1,7 @@
 import type { Match, Slot, Team } from '../../types'
 import { COURTS } from '../../lib/scheduling'
 import { getSlotCellLines } from '../../lib/scheduleDisplay'
+import { useCanEdit } from '../../state/AuthContext'
 import SlotCell from './SlotCell'
 
 interface SlotGridProps {
@@ -25,7 +26,16 @@ export default function SlotGrid({
   onSelectSlot,
   onUnassignSlot,
 }: SlotGridProps) {
+  const canEdit = useCanEdit()
   const times = Array.from(new Set(slots.map((slot) => slot.startTime))).sort()
+
+  // Im ausgeloggten Zustand werden die Mauthausen-Plätze nur angezeigt, wenn
+  // dort tatsächlich mindestens ein Spiel eingeteilt ist - sonst bleibt die
+  // Spalte für Besucher ausgeblendet (kein Interesse an leeren Plätzen dort).
+  const hasMauthausenAssignment = slots.some(
+    (slot) => slot.location === 'Mauthausen' && slot.assignedMatchId,
+  )
+  const showMauthausen = canEdit || hasMauthausenAssignment
 
   const renderCell = (
     time: string,
@@ -58,42 +68,51 @@ export default function SlotGrid({
   return (
     <div className="slot-grid__scroll">
       <table className="slot-grid">
-      <thead>
-        <tr>
-          <th rowSpan={2} className="slot-grid__time-col">
-            Uhrzeit
-          </th>
-          <th colSpan={3} className="slot-grid__location-header slot-grid__location-header--langenstein">
-            Langenstein
-          </th>
-          <th rowSpan={2} className="slot-grid__spacer" />
-          <th colSpan={2} className="slot-grid__location-header slot-grid__location-header--mauthausen">
-            Mauthausen
-          </th>
-        </tr>
-        <tr>
-          {LANGENSTEIN_COURTS.map(({ court }) => (
-            <th key={`langenstein-${court}`} className="slot-grid__court-header--langenstein">
-              Platz {court}
+        <thead>
+          <tr>
+            <th rowSpan={2} className="slot-grid__time-col">
+              Uhrzeit
             </th>
-          ))}
-          {MAUTHAUSEN_COURTS.map(({ court }) => (
-            <th key={`mauthausen-${court}`} className="slot-grid__court-header--mauthausen">
-              Platz {court}
+            <th colSpan={3} className="slot-grid__location-header slot-grid__location-header--langenstein">
+              Langenstein
             </th>
-          ))}
-        </tr>
-      </thead>
-      <tbody>
-        {times.map((time) => (
-          <tr key={time}>
-            <td className="slot-grid__time-col">{time}</td>
-            {LANGENSTEIN_COURTS.map(({ court }) => renderCell(time, 'Langenstein', court))}
-            <td className="slot-grid__spacer" />
-            {MAUTHAUSEN_COURTS.map(({ court }) => renderCell(time, 'Mauthausen', court))}
+            {showMauthausen && (
+              <>
+                <th rowSpan={2} className="slot-grid__spacer" />
+                <th colSpan={2} className="slot-grid__location-header slot-grid__location-header--mauthausen">
+                  Mauthausen
+                </th>
+              </>
+            )}
           </tr>
-        ))}
-      </tbody>
+          <tr>
+            {LANGENSTEIN_COURTS.map(({ court }) => (
+              <th key={`langenstein-${court}`} className="slot-grid__court-header--langenstein">
+                Platz {court}
+              </th>
+            ))}
+            {showMauthausen &&
+              MAUTHAUSEN_COURTS.map(({ court }) => (
+                <th key={`mauthausen-${court}`} className="slot-grid__court-header--mauthausen">
+                  Platz {court}
+                </th>
+              ))}
+          </tr>
+        </thead>
+        <tbody>
+          {times.map((time) => (
+            <tr key={time}>
+              <td className="slot-grid__time-col">{time}</td>
+              {LANGENSTEIN_COURTS.map(({ court }) => renderCell(time, 'Langenstein', court))}
+              {showMauthausen && (
+                <>
+                  <td className="slot-grid__spacer" />
+                  {MAUTHAUSEN_COURTS.map(({ court }) => renderCell(time, 'Mauthausen', court))}
+                </>
+              )}
+            </tr>
+          ))}
+        </tbody>
       </table>
     </div>
   )

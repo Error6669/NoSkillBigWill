@@ -1,4 +1,4 @@
-import { useRef, useState, type ChangeEvent } from 'react'
+import { useEffect, useRef, useState, type ChangeEvent } from 'react'
 import { useAuth } from '../../state/AuthContext'
 import { clearStoredGithubToken, getStoredGithubToken, setStoredGithubToken, type PublishResult } from '../../lib/publish'
 import LoginModal from './LoginModal'
@@ -24,8 +24,20 @@ export default function AppHeader({
   const { isEditMode, login, logout } = useAuth()
   const [loginOpen, setLoginOpen] = useState(false)
   const [tokenModalOpen, setTokenModalOpen] = useState(false)
-  const [publishing, setPublishing] = useState(false)
+  const [filling, setFilling] = useState(false)
+  const [fillActive, setFillActive] = useState(false)
   const fileInputRef = useRef<HTMLInputElement>(null)
+
+  // Der Fortschrittsbalken braucht einen Render-Zwischenschritt zwischen
+  // Breite 0% und 100%, sonst überspringt der Browser die CSS-Transition.
+  useEffect(() => {
+    if (!filling) {
+      setFillActive(false)
+      return
+    }
+    const raf = requestAnimationFrame(() => setFillActive(true))
+    return () => cancelAnimationFrame(raf)
+  }, [filling])
 
   const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0]
@@ -36,20 +48,22 @@ export default function AppHeader({
   }
 
   const runPublish = async (token: string) => {
-    setPublishing(true)
     const result = await onPublish(token)
-    setPublishing(false)
-    if (result.success) {
-      alert('Veröffentlicht! Es dauert ca. 30–60 Sekunden, bis die Änderung online sichtbar ist.')
-    } else {
+    if (!result.success) {
       if (result.error?.toLowerCase().includes('token')) {
         clearStoredGithubToken()
       }
       alert(`Veröffentlichen fehlgeschlagen: ${result.error ?? 'unbekannter Fehler'}`)
+      return
     }
+    // Erfolgreich: Fortschrittsbalken zeigt für 1 Minute (ungefähre
+    // Deployment-Dauer) den Fortschritt, danach zurück zum Normalzustand.
+    setFilling(true)
+    window.setTimeout(() => setFilling(false), 60000)
   }
 
   const handlePublishClick = () => {
+    if (filling) return
     const token = getStoredGithubToken()
     if (!token) {
       setTokenModalOpen(true)
@@ -93,23 +107,21 @@ export default function AppHeader({
             <button type="button" className="btn btn--secondary" onClick={onDownloadMyGames}>
               Meine Spiele downloaden
             </button>
-            <button
-              type="button"
-              className="btn btn--secondary-outline"
-              onClick={onLoadSampleData}
-            >
+            <button type="button" className="btn btn--secondary" onClick={onLoadSampleData}>
               Testdaten laden
             </button>
-            <button type="button" className="btn btn--danger" onClick={onReset}>
+            <button type="button" className="btn btn--secondary" onClick={onReset}>
               Alle Daten löschen
             </button>
             <button
               type="button"
-              className="btn btn--primary"
-              disabled={publishing}
+              className="btn btn--secondary btn--publish"
               onClick={handlePublishClick}
             >
-              {publishing ? 'Veröffentliche…' : 'Veröffentlichen'}
+              {filling && (
+                <span className={fillActive ? 'btn--publish__fill btn--publish__fill--active' : 'btn--publish__fill'} />
+              )}
+              <span className="btn--publish__label">{filling ? 'Veröffentliche…' : 'Veröffentlichen'}</span>
             </button>
           </>
         )}
