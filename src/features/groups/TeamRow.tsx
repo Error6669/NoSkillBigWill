@@ -1,4 +1,5 @@
 import type { Team } from '../../types'
+import { useCanEdit } from '../../state/AuthContext'
 
 interface TeamRowProps {
   team: Team
@@ -10,6 +11,7 @@ interface TeamRowProps {
 }
 
 export default function TeamRow({ team, duplicateNames, onUpdateTeam }: TeamRowProps) {
+  const canEdit = useCanEdit()
   const p1 = team.player1Name.trim()
   const p2 = team.player2Name.trim()
   const isEmpty = !p1 && !p2
@@ -25,6 +27,7 @@ export default function TeamRow({ team, duplicateNames, onUpdateTeam }: TeamRowP
           type="text"
           placeholder="Spieler 1"
           value={team.player1Name}
+          disabled={!canEdit}
           onChange={(event) =>
             onUpdateTeam(team.id, { player1Name: event.target.value })
           }
@@ -34,6 +37,7 @@ export default function TeamRow({ team, duplicateNames, onUpdateTeam }: TeamRowP
           type="text"
           placeholder="Spieler 2"
           value={team.player2Name}
+          disabled={!canEdit}
           onChange={(event) =>
             onUpdateTeam(team.id, { player2Name: event.target.value })
           }

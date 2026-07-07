@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "postbuild": "node scripts/strip-crossorigin.mjs",
+    "build:pages": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview"
   },

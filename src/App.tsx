@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import AppHeader from './components/layout/AppHeader'
 import TabNavigation, { type TabId } from './components/navigation/TabNavigation'
 import GroupsView from './features/groups/GroupsView'
@@ -9,18 +9,30 @@ import MyGamesView from './features/mygames/MyGamesView'
 import { exportStateToFile, importStateFromFile } from './lib/storage'
 import { downloadMyGamesHtml } from './lib/htmlExport'
 import { AppStateProvider, useAppState } from './state/AppStateContext'
+import { AuthProvider, useCanEdit } from './state/AuthContext'
 
 function App() {
   return (
-    <AppStateProvider>
-      <AppShell />
-    </AppStateProvider>
+    <AuthProvider>
+      <AppStateProvider>
+        <AppShell />
+      </AppStateProvider>
+    </AuthProvider>
   )
 }
 
 function AppShell() {
   const { state, setState, resetAll, loadSampleData } = useAppState()
+  const canEdit = useCanEdit()
   const [activeTab, setActiveTab] = useState<TabId>('groups')
+
+  // Der Ergebnisse-Reiter ist im ausgeloggten Zustand ausgeblendet - falls
+  // man beim Ausloggen gerade dort war, auf einen sichtbaren Reiter wechseln.
+  useEffect(() => {
+    if (!canEdit && activeTab === 'results') {
+      setActiveTab('groups')
+    }
+  }, [canEdit, activeTab])
 
   const handleImport = async (file: File) => {
     try {
@@ -63,7 +75,7 @@ function AppShell() {
         {activeTab === 'groups' && <GroupsView />}
         {activeTab === 'koPhase' && <KoPhaseView />}
         {activeTab === 'scheduling' && <SchedulingView />}
-        {activeTab === 'results' && <ResultsView />}
+        {activeTab === 'results' && canEdit && <ResultsView />}
         {activeTab === 'myGames' && <MyGamesView />}
       </main>
     </div>

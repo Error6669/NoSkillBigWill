@@ -14,6 +14,7 @@ import { createSampleState } from '../lib/sampleData'
 import { buildDisplayName } from '../lib/teams'
 import { createDefaultDayConfig, generateSlotsForDay } from '../lib/scheduling'
 import { applyResultToMatch, createDefaultSets, getMatchFormat, isTiebreakScore } from '../lib/matchResult'
+import { useAuth } from './AuthContext'
 
 /** Setzt den Verplanungs-Status, ohne ein bereits abgeschlossenes Match zurückzusetzen. */
 function withScheduleStatus(match: Match, scheduledSlotId: string | undefined): Match {
@@ -21,6 +22,17 @@ function withScheduleStatus(match: Match, scheduledSlotId: string | undefined): 
     return { ...match, scheduledSlotId }
   }
   return { ...match, scheduledSlotId, status: scheduledSlotId ? 'scheduled' : 'unscheduled' }
+}
+
+/** Verpackt eine verändernde Aktion so, dass sie außerhalb des Bearbeitungsmodus nichts tut. */
+function guardAction<Args extends unknown[]>(
+  isEditMode: boolean,
+  fn: (...args: Args) => void,
+): (...args: Args) => void {
+  return (...args: Args) => {
+    if (!isEditMode) return
+    fn(...args)
+  }
 }
 
 interface AppStateContextValue {
@@ -299,26 +311,32 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
     }))
   }
 
+  const { isEditMode } = useAuth()
+
   const value = useMemo(
     () => ({
       state,
-      setState,
-      updateTeam,
-      resetAll,
-      loadSampleData,
-      setKoFormatSetting,
-      addDayConfig,
-      updateDayConfig,
-      removeDayConfig,
-      regenerateSlotsForDay,
-      assignMatchToSlot,
-      unassignSlot,
-      swapSlotAssignments,
-      updateMatchSet,
-      updateMatchTiebreak,
-      setMatchWalkover,
+      // Alle folgenden Funktionen verändern den Turnierzustand und werden
+      // deshalb zentral an einer Stelle gegen den Bearbeitungsschutz
+      // abgesichert: Solange isEditMode false ist, tun sie schlicht nichts,
+      // egal von welcher Komponente aus sie aufgerufen werden.
+      setState: guardAction(isEditMode, setState),
+      updateTeam: guardAction(isEditMode, updateTeam),
+      resetAll: guardAction(isEditMode, resetAll),
+      loadSampleData: guardAction(isEditMode, loadSampleData),
+      setKoFormatSetting: guardAction(isEditMode, setKoFormatSetting),
+      addDayConfig: guardAction(isEditMode, addDayConfig),
+      updateDayConfig: guardAction(isEditMode, updateDayConfig),
+      removeDayConfig: guardAction(isEditMode, removeDayConfig),
+      regenerateSlotsForDay: guardAction(isEditMode, regenerateSlotsForDay),
+      assignMatchToSlot: guardAction(isEditMode, assignMatchToSlot),
+      unassignSlot: guardAction(isEditMode, unassignSlot),
+      swapSlotAssignments: guardAction(isEditMode, swapSlotAssignments),
+      updateMatchSet: guardAction(isEditMode, updateMatchSet),
+      updateMatchTiebreak: guardAction(isEditMode, updateMatchTiebreak),
+      setMatchWalkover: guardAction(isEditMode, setMatchWalkover),
     }),
-    [state],
+    [state, isEditMode],
   )
 
   return (

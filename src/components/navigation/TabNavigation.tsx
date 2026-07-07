@@ -1,3 +1,5 @@
+import { useCanEdit } from '../../state/AuthContext'
+
 export type TabId = 'groups' | 'koPhase' | 'scheduling' | 'results' | 'myGames'
 
 interface TabNavigationProps {
@@ -14,9 +16,14 @@ const TABS: { id: TabId; label: string }[] = [
 ]
 
 export default function TabNavigation({ activeTab, onChange }: TabNavigationProps) {
+  const canEdit = useCanEdit()
+  // Der Ergebnisse-Reiter dient nur der Bearbeitung und wird im
+  // ausgeloggten Zustand komplett ausgeblendet (nicht nur gesperrt).
+  const visibleTabs = canEdit ? TABS : TABS.filter((tab) => tab.id !== 'results')
+
   return (
     <nav className="tab-nav" aria-label="Hauptnavigation">
-      {TABS.map((tab) => (
+      {visibleTabs.map((tab) => (
         <button
           key={tab.id}
           type="button"
