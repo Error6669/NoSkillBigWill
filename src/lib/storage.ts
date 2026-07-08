@@ -5,7 +5,7 @@ import { generateKoMatches } from './koMatches'
 import { DEFAULT_KO_FORMAT_SETTINGS } from './matchResult'
 import { toIsoDate } from './scheduling'
 
-const STORAGE_KEY = 'turnier-app-state-v1'
+export const STORAGE_KEY = 'turnier-app-state-v1'
 
 function createSeedState(): AppState {
   const teams = createInitialTeams()

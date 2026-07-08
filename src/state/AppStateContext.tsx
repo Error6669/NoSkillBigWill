@@ -9,7 +9,7 @@ import {
   type SetStateAction,
 } from 'react'
 import type { AppState, DayConfig, KoFormatSettings, Match, MatchTiebreak, Result, SetScore, Team } from '../types'
-import { loadState, resetState, saveState } from '../lib/storage'
+import { loadState, resetState, saveState, STORAGE_KEY } from '../lib/storage'
 import { createSampleState } from '../lib/sampleData'
 import { buildDisplayName } from '../lib/teams'
 import { createDefaultDayConfig, generateSlotsForDay } from '../lib/scheduling'
@@ -94,6 +94,20 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
     return () => {
       cancelled = true
     }
+  }, [])
+
+  // Synchronisiert mehrere gleichzeitig offene Fenster/Tabs derselben App
+  // (z.B. Hauptfenster + "Externe Anzeige"): localStorage wird pro Tab nicht
+  // im eigenen "storage"-Event gemeldet, wohl aber in allen ANDEREN offenen
+  // Fenstern desselben Ursprungs - das nutzen wir, um dort automatisch neu
+  // zu laden, sobald sich im Hauptfenster etwas ändert.
+  useEffect(() => {
+    const handleStorage = (event: StorageEvent) => {
+      if (event.key !== STORAGE_KEY) return
+      setState(loadState())
+    }
+    window.addEventListener('storage', handleStorage)
+    return () => window.removeEventListener('storage', handleStorage)
   }, [])
 
   const updateTeam: AppStateContextValue['updateTeam'] = (teamId, updates) => {

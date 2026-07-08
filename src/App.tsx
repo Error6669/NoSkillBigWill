@@ -9,15 +9,16 @@ import MyGamesView from './features/mygames/MyGamesView'
 import { exportStateToFile, importStateFromFile } from './lib/storage'
 import { downloadMyGamesHtml } from './lib/htmlExport'
 import { publishStateToGithub } from './lib/publish'
+import ExternalDisplayView from './features/scheduling/ExternalDisplayView'
 import { AppStateProvider, useAppState } from './state/AppStateContext'
 import { AuthProvider, useCanEdit } from './state/AuthContext'
+
+const isExternalDisplay = new URLSearchParams(window.location.search).has('display')
 
 function App() {
   return (
     <AuthProvider>
-      <AppStateProvider>
-        <AppShell />
-      </AppStateProvider>
+      <AppStateProvider>{isExternalDisplay ? <ExternalDisplayView /> : <AppShell />}</AppStateProvider>
     </AuthProvider>
   )
 }

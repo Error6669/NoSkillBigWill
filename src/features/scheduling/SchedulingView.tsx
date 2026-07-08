@@ -163,6 +163,17 @@ export default function SchedulingView() {
     setExportMenuOpen(false)
   }
 
+  const handleOpenExternalDisplay = () => {
+    if (selectedDay === null) return
+    const url = new URL(window.location.href)
+    url.search = `?display=${selectedDay}`
+    window.open(
+      url.toString(),
+      '_blank',
+      `width=${window.screen.width},height=${window.screen.height},noopener`,
+    )
+  }
+
   return (
     <section className="scheduling-view">
       <div className="scheduling-header">
@@ -173,6 +184,16 @@ export default function SchedulingView() {
           </p>
         </div>
         <div className="scheduling-export" ref={exportMenuRef}>
+          {canEdit && (
+            <button
+              type="button"
+              className="btn btn--secondary-outline"
+              disabled={selectedDay === null}
+              onClick={handleOpenExternalDisplay}
+            >
+              Externe Anzeige
+            </button>
+          )}
           <button
             type="button"
             className="btn btn--secondary-outline"
