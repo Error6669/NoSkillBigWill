@@ -1673,6 +1673,7 @@ h1, h2, h3 {
   font-weight: 700;
   text-align: center;
   background: var(--color-bg);
+  border-right: 2px solid var(--color-border) !important;
   width: 90px;
   padding: 12px !important;
   font-size: 18px;
@@ -1682,6 +1683,14 @@ h1, h2, h3 {
   width: 14px;
   border: none !important;
   background: transparent !important;
+}
+
+.external-display__court-col {
+  background: var(--color-surface);
+}
+
+.external-display__court-col--alt {
+  background: rgba(31, 111, 67, 0.035);
 }
 
 .external-display__cell {
@@ -1705,7 +1714,7 @@ h1, h2, h3 {
 
 .external-display__names {
   font-size: 21px;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--color-text);
 }
 
