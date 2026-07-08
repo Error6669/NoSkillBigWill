@@ -1678,6 +1678,10 @@ h1, h2, h3 {
   font-size: 18px;
 }
 
+.external-display__table th.external-display__time-col {
+  border-right: 2px solid rgba(255, 255, 255, 0.45);
+}
+
 .external-display__spacer {
   width: 14px;
   border: none !important;
@@ -1689,19 +1693,8 @@ h1, h2, h3 {
    Slots selbst bleiben unverändert (Grün ist dort weiter der Markierung
    "Spiel eingeteilt" vorbehalten). */
 .external-display__court-header {
-  border-right: 2px solid rgba(255, 255, 255, 0.45);
-}
-
-.external-display__court-header--court1 {
   background: var(--color-primary);
-}
-
-.external-display__court-header--court2 {
-  background: var(--color-primary-dark);
-}
-
-.external-display__court-header--court3 {
-  background: #123d24;
+  border-right: 2px solid rgba(255, 255, 255, 0.45);
 }
 
 .external-display__cell {

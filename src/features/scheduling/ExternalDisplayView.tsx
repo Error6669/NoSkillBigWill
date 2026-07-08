@@ -120,13 +120,13 @@ export default function ExternalDisplayView() {
             </tr>
             <tr>
               {LANGENSTEIN_COURTS.map(({ court }) => (
-                <th key={`l-${court}`} className={`external-display__court-header external-display__court-header--court${court}`}>
+                <th key={`l-${court}`} className="external-display__court-header">
                   Platz {court}
                 </th>
               ))}
               {hasMauthausen &&
                 MAUTHAUSEN_COURTS.map(({ court }) => (
-                  <th key={`m-${court}`} className={`external-display__court-header external-display__court-header--court${court}`}>
+                  <th key={`m-${court}`} className="external-display__court-header">
                     Platz {court}
                   </th>
                 ))}
