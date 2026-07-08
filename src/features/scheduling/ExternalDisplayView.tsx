@@ -47,15 +47,14 @@ export default function ExternalDisplayView() {
   }
 
   const renderCell = (time: string, location: Location, court: number) => {
-    const courtColClass = `external-display__court-col external-display__court-col--court${court}`
     const slot = daySlots.find(
       (entry) => entry.startTime === time && entry.location === location && entry.court === court,
     )
-    if (!slot) return <td key={`${location}-${court}`} className={courtColClass} />
+    if (!slot) return <td key={`${location}-${court}`} />
     const match = state.matches.find((m) => m.id === slot.assignedMatchId)
     const lines = match ? getSlotCellLines(match, state.teams, state.matches) : null
     return (
-      <td key={`${location}-${court}`} className={courtColClass}>
+      <td key={`${location}-${court}`}>
         <div className={lines ? 'external-display__cell external-display__cell--occupied' : 'external-display__cell'}>
           {lines ? (
             <>

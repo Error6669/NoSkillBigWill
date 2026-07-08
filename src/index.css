@@ -1664,10 +1664,7 @@ h1, h2, h3 {
 }
 
 .external-display__table td {
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
-  border-left: none;
-  border-right: none;
+  border: 1px solid var(--color-border);
   padding: 0;
   vertical-align: top;
 }
@@ -1676,7 +1673,6 @@ h1, h2, h3 {
   font-weight: 700;
   text-align: center;
   background: var(--color-bg);
-  border-right: 3px solid var(--color-primary) !important;
   width: 90px;
   padding: 12px !important;
   font-size: 18px;
@@ -1688,24 +1684,12 @@ h1, h2, h3 {
   background: transparent !important;
 }
 
-/* Jede Platz-Spalte bekommt einen eigenen, dezenten (nicht-grünen) Farbton
-   plus eine klare Trennlinie zur nächsten Spalte, damit sich Platz 1/2/3
-   auch bei leeren Zeilen optisch unterscheiden lassen. Grün bleibt allein
-   der Markierung "Spiel eingeteilt" vorbehalten. */
-.external-display__court-col {
-  border-right: 2px solid var(--color-border) !important;
-}
-
-.external-display__court-col--court1 {
-  background: var(--color-surface);
-}
-
-.external-display__court-col--court2 {
-  background: #eef1f5;
-}
-
-.external-display__court-col--court3 {
-  background: #f7f0e6;
+/* Die "Platz X"-Überschriften bekommen unterschiedliche Grüntöne plus eine
+   Trennlinie, damit man die Spalten auf einen Blick unterscheiden kann - die
+   Slots selbst bleiben unverändert (Grün ist dort weiter der Markierung
+   "Spiel eingeteilt" vorbehalten). */
+.external-display__court-header {
+  border-right: 2px solid rgba(255, 255, 255, 0.45);
 }
 
 .external-display__court-header--court1 {
@@ -1717,8 +1701,7 @@ h1, h2, h3 {
 }
 
 .external-display__court-header--court3 {
-  background: var(--color-primary);
-  filter: brightness(0.88);
+  background: #123d24;
 }
 
 .external-display__cell {
