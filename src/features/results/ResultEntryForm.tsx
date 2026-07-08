@@ -1,3 +1,4 @@
+import type { FocusEvent } from 'react'
 import type { Match } from '../../types'
 import {
   createDefaultSets,
@@ -27,6 +28,16 @@ export default function ResultEntryForm({ match, team1Id, team2Id }: ResultEntry
 
   const handleWalkoverToggle = (teamId: string) => {
     setMatchWalkover(match.id, walkoverTeam === teamId ? null : teamId)
+  }
+
+  // Beim ersten Klick/Fokussieren die aktuelle Zahl markieren, damit sie
+  // sich direkt durch Eintippen überschreiben lässt. Per Mausklick setzt der
+  // Browser die Cursor-Position aber erst NACH dem focus-Event neu, was eine
+  // sofortige .select()-Auswahl sonst wieder aufheben würde - daher leicht
+  // verzögert (nächster Tick), nachdem der Browser fertig ist.
+  const handleFocusSelect = (event: FocusEvent<HTMLInputElement>) => {
+    const target = event.target
+    window.setTimeout(() => target.select(), 0)
   }
 
   return (
@@ -64,6 +75,7 @@ export default function ResultEntryForm({ match, team1Id, team2Id }: ResultEntry
                       min={0}
                       className={issue ? 'input result-entry__score input--warning' : 'input result-entry__score'}
                       value={sets[setIndex].team1Games}
+                      onFocus={handleFocusSelect}
                       onChange={(event) =>
                         updateMatchSet(match.id, setIndex as 0 | 1, {
                           team1Games: Number(event.target.value),
@@ -76,6 +88,7 @@ export default function ResultEntryForm({ match, team1Id, team2Id }: ResultEntry
                       min={0}
                       className={issue ? 'input result-entry__score input--warning' : 'input result-entry__score'}
                       value={sets[setIndex].team2Games}
+                      onFocus={handleFocusSelect}
                       onChange={(event) =>
                         updateMatchSet(match.id, setIndex as 0 | 1, {
                           team2Games: Number(event.target.value),
@@ -108,6 +121,7 @@ export default function ResultEntryForm({ match, team1Id, team2Id }: ResultEntry
                         tiebreakIssue ? 'input result-entry__score input--warning' : 'input result-entry__score'
                       }
                       value={matchTiebreak.team1Points}
+                      onFocus={handleFocusSelect}
                       onChange={(event) =>
                         updateMatchTiebreak(match.id, { team1Points: Number(event.target.value) })
                       }
@@ -120,6 +134,7 @@ export default function ResultEntryForm({ match, team1Id, team2Id }: ResultEntry
                         tiebreakIssue ? 'input result-entry__score input--warning' : 'input result-entry__score'
                       }
                       value={matchTiebreak.team2Points}
+                      onFocus={handleFocusSelect}
                       onChange={(event) =>
                         updateMatchTiebreak(match.id, { team2Points: Number(event.target.value) })
                       }
