@@ -1606,12 +1606,36 @@ h1, h2, h3 {
 
 .external-display__header {
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .external-display__header h1 {
-  font-size: 26px;
+  font-size: 28px;
   color: var(--color-primary);
   margin: 0;
+  text-align: center;
+}
+
+.external-display__nav-btn {
+  appearance: none;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-primary);
+  border-radius: 8px;
+  width: 44px;
+  height: 44px;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.external-display__nav-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
 }
 
 .external-display__hint {
@@ -1628,14 +1652,14 @@ h1, h2, h3 {
   border: 1px solid var(--color-border);
   border-radius: 10px;
   overflow: hidden;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .external-display__table th {
   background: var(--color-primary);
   color: var(--color-primary-contrast);
-  padding: 12px 8px;
-  font-size: 15px;
+  padding: 14px 8px;
+  font-size: 19px;
   font-weight: 700;
 }
 
@@ -1649,8 +1673,9 @@ h1, h2, h3 {
   font-weight: 700;
   text-align: center;
   background: var(--color-bg);
-  width: 76px;
-  padding: 10px !important;
+  width: 90px;
+  padding: 12px !important;
+  font-size: 18px;
 }
 
 .external-display__spacer {
@@ -1660,12 +1685,12 @@ h1, h2, h3 {
 }
 
 .external-display__cell {
-  min-height: 64px;
-  padding: 8px 10px;
+  min-height: 92px;
+  padding: 10px 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 3px;
+  gap: 5px;
 }
 
 .external-display__cell--occupied {
@@ -1674,18 +1699,19 @@ h1, h2, h3 {
 
 .external-display__positions {
   font-weight: 700;
-  font-size: 15.5px;
+  font-size: 19px;
   color: var(--color-text);
 }
 
 .external-display__names {
-  font-size: 14px;
-  color: var(--color-text-muted);
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--color-text);
 }
 
 .external-display__empty {
   color: var(--color-text-muted);
-  font-size: 13px;
+  font-size: 16px;
   text-align: center;
   display: block;
 }

@@ -164,9 +164,8 @@ export default function SchedulingView() {
   }
 
   const handleOpenExternalDisplay = () => {
-    if (selectedDay === null) return
     const url = new URL(window.location.href)
-    url.search = `?display=${selectedDay}`
+    url.search = '?display=1'
     window.open(
       url.toString(),
       '_blank',
@@ -188,7 +187,7 @@ export default function SchedulingView() {
             <button
               type="button"
               className="btn btn--secondary-outline"
-              disabled={selectedDay === null}
+              disabled={state.dayConfigs.length === 0}
               onClick={handleOpenExternalDisplay}
             >
               Externe Anzeige

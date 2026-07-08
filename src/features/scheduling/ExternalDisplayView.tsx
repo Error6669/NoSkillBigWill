@@ -1,24 +1,50 @@
+import { useEffect, useMemo, useState } from 'react'
 import { useAppState } from '../../state/AppStateContext'
-import { COURTS, formatFullDate, formatWeekday } from '../../lib/scheduling'
+import { COURTS, formatFullDate, formatWeekday, toIsoDate } from '../../lib/scheduling'
 import { getSlotCellLines } from '../../lib/scheduleDisplay'
-import type { Location } from '../../types'
+import type { DayConfig, Location } from '../../types'
 
 const LANGENSTEIN_COURTS = COURTS.filter((entry) => entry.location === 'Langenstein')
 const MAUTHAUSEN_COURTS = COURTS.filter((entry) => entry.location === 'Mauthausen')
 
-function getDisplayDayFromUrl(): number | null {
-  const value = new URLSearchParams(window.location.search).get('display')
-  const day = Number(value)
-  return value !== null && Number.isInteger(day) ? day : null
+/** Heutiger Spieltag, falls vorhanden - sonst der chronologisch erste angelegte Spieltag. */
+function findDefaultDay(sortedDayConfigs: DayConfig[]): number | null {
+  if (sortedDayConfigs.length === 0) return null
+  const today = toIsoDate(new Date())
+  const todayConfig = sortedDayConfigs.find((config) => config.date === today)
+  return (todayConfig ?? sortedDayConfigs[0]).day
 }
 
 export default function ExternalDisplayView() {
   const { state } = useAppState()
-  const day = getDisplayDayFromUrl()
-  const dayConfig = state.dayConfigs.find((config) => config.day === day)
+  const sortedDayConfigs = useMemo(
+    () => [...state.dayConfigs].sort((a, b) => a.date.localeCompare(b.date)),
+    [state.dayConfigs],
+  )
+  const [day, setDay] = useState<number | null>(() => findDefaultDay(sortedDayConfigs))
+
+  // Falls der aktuell gezeigte Tag nicht mehr existiert (z.B. gelöscht),
+  // auf einen gültigen Tag zurückfallen.
+  useEffect(() => {
+    if (day !== null && sortedDayConfigs.some((config) => config.day === day)) return
+    setDay(findDefaultDay(sortedDayConfigs))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sortedDayConfigs])
+
+  const currentIndex = sortedDayConfigs.findIndex((config) => config.day === day)
+  const dayConfig = currentIndex >= 0 ? sortedDayConfigs[currentIndex] : undefined
   const daySlots = state.slots.filter((slot) => slot.day === day)
   const times = Array.from(new Set(daySlots.map((slot) => slot.startTime))).sort()
   const hasMauthausen = daySlots.some((slot) => slot.location === 'Mauthausen' && slot.assignedMatchId)
+
+  const goToPrevDay = () => {
+    if (currentIndex > 0) setDay(sortedDayConfigs[currentIndex - 1].day)
+  }
+  const goToNextDay = () => {
+    if (currentIndex >= 0 && currentIndex < sortedDayConfigs.length - 1) {
+      setDay(sortedDayConfigs[currentIndex + 1].day)
+    }
+  }
 
   const renderCell = (time: string, location: Location, court: number) => {
     const slot = daySlots.find(
@@ -47,16 +73,34 @@ export default function ExternalDisplayView() {
 
   return (
     <div className="external-display">
-      {dayConfig && (
-        <div className="external-display__header">
-          <h1>
-            Platzplan – {formatWeekday(dayConfig.date)}, {formatFullDate(dayConfig.date)}
-          </h1>
-        </div>
-      )}
+      <div className="external-display__header">
+        <button
+          type="button"
+          className="external-display__nav-btn"
+          disabled={currentIndex <= 0}
+          onClick={goToPrevDay}
+          aria-label="Vorheriger Spieltag"
+        >
+          ‹
+        </button>
+        <h1>
+          {dayConfig
+            ? `Platzplan – ${formatWeekday(dayConfig.date)}, ${formatFullDate(dayConfig.date)}`
+            : 'Platzplan'}
+        </h1>
+        <button
+          type="button"
+          className="external-display__nav-btn"
+          disabled={currentIndex === -1 || currentIndex >= sortedDayConfigs.length - 1}
+          onClick={goToNextDay}
+          aria-label="Nächster Spieltag"
+        >
+          ›
+        </button>
+      </div>
 
       {!dayConfig ? (
-        <p className="external-display__hint">Kein gültiger Spieltag ausgewählt.</p>
+        <p className="external-display__hint">Noch kein Spieltag angelegt.</p>
       ) : times.length === 0 ? (
         <p className="external-display__hint">Für diesen Spieltag sind noch keine Slots angelegt.</p>
       ) : (
