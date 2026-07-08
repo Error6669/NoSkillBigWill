@@ -47,8 +47,7 @@ export default function ExternalDisplayView() {
   }
 
   const renderCell = (time: string, location: Location, court: number) => {
-    const courtColClass =
-      court % 2 === 0 ? 'external-display__court-col external-display__court-col--alt' : 'external-display__court-col'
+    const courtColClass = `external-display__court-col external-display__court-col--court${court}`
     const slot = daySlots.find(
       (entry) => entry.startTime === time && entry.location === location && entry.court === court,
     )
@@ -122,10 +121,16 @@ export default function ExternalDisplayView() {
             </tr>
             <tr>
               {LANGENSTEIN_COURTS.map(({ court }) => (
-                <th key={`l-${court}`}>Platz {court}</th>
+                <th key={`l-${court}`} className={`external-display__court-header external-display__court-header--court${court}`}>
+                  Platz {court}
+                </th>
               ))}
               {hasMauthausen &&
-                MAUTHAUSEN_COURTS.map(({ court }) => <th key={`m-${court}`}>Platz {court}</th>)}
+                MAUTHAUSEN_COURTS.map(({ court }) => (
+                  <th key={`m-${court}`} className={`external-display__court-header external-display__court-header--court${court}`}>
+                    Platz {court}
+                  </th>
+                ))}
             </tr>
           </thead>
           <tbody>

@@ -1664,7 +1664,10 @@ h1, h2, h3 {
 }
 
 .external-display__table td {
-  border: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  border-left: none;
+  border-right: none;
   padding: 0;
   vertical-align: top;
 }
@@ -1673,7 +1676,7 @@ h1, h2, h3 {
   font-weight: 700;
   text-align: center;
   background: var(--color-bg);
-  border-right: 2px solid var(--color-border) !important;
+  border-right: 3px solid var(--color-primary) !important;
   width: 90px;
   padding: 12px !important;
   font-size: 18px;
@@ -1685,12 +1688,37 @@ h1, h2, h3 {
   background: transparent !important;
 }
 
+/* Jede Platz-Spalte bekommt einen eigenen, dezenten (nicht-grünen) Farbton
+   plus eine klare Trennlinie zur nächsten Spalte, damit sich Platz 1/2/3
+   auch bei leeren Zeilen optisch unterscheiden lassen. Grün bleibt allein
+   der Markierung "Spiel eingeteilt" vorbehalten. */
 .external-display__court-col {
+  border-right: 2px solid var(--color-border) !important;
+}
+
+.external-display__court-col--court1 {
   background: var(--color-surface);
 }
 
-.external-display__court-col--alt {
-  background: rgba(31, 111, 67, 0.035);
+.external-display__court-col--court2 {
+  background: #eef1f5;
+}
+
+.external-display__court-col--court3 {
+  background: #f7f0e6;
+}
+
+.external-display__court-header--court1 {
+  background: var(--color-primary);
+}
+
+.external-display__court-header--court2 {
+  background: var(--color-primary-dark);
+}
+
+.external-display__court-header--court3 {
+  background: var(--color-primary);
+  filter: brightness(0.88);
 }
 
 .external-display__cell {
