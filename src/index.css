@@ -1650,9 +1650,16 @@ h1, h2, h3 {
   border-collapse: collapse;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: 10px;
-  overflow: hidden;
   font-size: 18px;
+}
+
+/* "overflow: hidden" (für abgerundete Ecken) würde das Sticky-Verhalten des
+   Tabellenkopfs beim Scrollen verhindern - deshalb sind die Ecken hier nicht
+   mehr abgerundet, dafür bleibt die Kopfzeile beim Scrollen sichtbar. */
+.external-display__table thead {
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
 
 .external-display__table th {
