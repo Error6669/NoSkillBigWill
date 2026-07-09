@@ -1,5 +1,5 @@
 {
-  "publishedAt": "2026-07-09T11:20:24.989Z",
+  "publishedAt": "2026-07-09T11:30:02.447Z",
   "state": {
     "teams": [
       {
@@ -353,7 +353,7 @@
         "team1Resolved": true,
         "team2Resolved": true,
         "status": "scheduled",
-        "scheduledSlotId": "day2-Langenstein-2-18:00"
+        "scheduledSlotId": "day2-Langenstein-3-15:00"
       },
       {
         "id": "group-A-3-4",
@@ -771,7 +771,7 @@
         "team1Resolved": true,
         "team2Resolved": true,
         "status": "scheduled",
-        "scheduledSlotId": "day2-Langenstein-3-15:00"
+        "scheduledSlotId": "day2-Langenstein-2-18:00"
       },
       {
         "id": "group-E-2-3",
@@ -1642,7 +1642,7 @@
         "court": 3,
         "startTime": "15:00",
         "endTime": "16:00",
-        "assignedMatchId": "group-E-1-4"
+        "assignedMatchId": "group-A-2-4"
       },
       {
         "id": "day2-Mauthausen-1-15:00",
@@ -1759,7 +1759,7 @@
         "court": 2,
         "startTime": "18:00",
         "endTime": "19:00",
-        "assignedMatchId": "group-A-2-4"
+        "assignedMatchId": "group-E-1-4"
       },
       {
         "id": "day2-Langenstein-3-18:00",
