@@ -1,8 +1,9 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { useAppState } from '../../state/AppStateContext'
 import { useCanEdit } from '../../state/AuthContext'
 import { formatDayTabLabel } from '../../lib/scheduling'
 import { getSlotCellLines } from '../../lib/scheduleDisplay'
+import { computeScheduleConflicts } from '../../lib/scheduleConflicts'
 import { generateSchedulePdf, generateSchedulePdfForDay } from '../../lib/pdf/schedulePdf'
 import DayConfigPanel from './DayConfigPanel'
 import SlotGrid from './SlotGrid'
@@ -43,6 +44,12 @@ export default function SchedulingView() {
 
   const currentDayConfig = state.dayConfigs.find((config) => config.day === selectedDay) ?? null
   const daySlots = selectedDay !== null ? state.slots.filter((slot) => slot.day === selectedDay) : []
+
+  // Nur im eingeloggten Zustand berechnen/anzeigen - reine Planungshilfe.
+  const conflicts = useMemo(
+    () => (canEdit ? computeScheduleConflicts(daySlots, state.matches, state.teams) : undefined),
+    [canEdit, daySlots, state.matches, state.teams],
+  )
 
   useEffect(() => {
     if (gridHeightLocked.current) return
@@ -288,6 +295,7 @@ export default function SchedulingView() {
                     teams={state.teams}
                     selectedSlotId={selectedSlotId}
                     swapSelection={swapSelection}
+                    conflicts={conflicts}
                     onSelectSlot={handleSelectSlot}
                     onUnassignSlot={handleUnassignSlot}
                   />

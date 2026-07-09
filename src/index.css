@@ -902,6 +902,19 @@ h1, h2, h3 {
   background: rgba(217, 130, 43, 0.1);
 }
 
+/* Planungshilfe (nur eingeloggt): rot = dasselbe Doppel doppelt zur selben
+   Uhrzeit verplant (unmöglich), orange = dasselbe Doppel ohne Pause direkt
+   im nächsten Zeitslot erneut verplant. */
+.slot-cell--conflict-red {
+  background: rgba(192, 57, 43, 0.16) !important;
+  border: 2px solid #c0392b !important;
+}
+
+.slot-cell--conflict-orange {
+  background: rgba(217, 130, 43, 0.16) !important;
+  border: 2px solid #d9822b !important;
+}
+
 .slot-cell--langenstein {
   border-left: 3px solid var(--color-primary);
 }

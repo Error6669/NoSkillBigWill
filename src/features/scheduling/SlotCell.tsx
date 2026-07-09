@@ -9,6 +9,7 @@ interface SlotCellProps {
   location: Location
   isSelected: boolean
   isSwapSelected: boolean
+  conflictLevel?: 'red' | 'orange'
   onSelect: () => void
   onUnassign: () => void
 }
@@ -20,6 +21,7 @@ export default function SlotCell({
   location,
   isSelected,
   isSwapSelected,
+  conflictLevel,
   onSelect,
   onUnassign,
 }: SlotCellProps) {
@@ -32,6 +34,8 @@ export default function SlotCell({
   if (isSelected) classNames.push('slot-cell--selected')
   if (isSwapSelected) classNames.push('slot-cell--swap-selected')
   if (!canEdit) classNames.push('slot-cell--readonly')
+  if (conflictLevel === 'red') classNames.push('slot-cell--conflict-red')
+  if (conflictLevel === 'orange') classNames.push('slot-cell--conflict-orange')
 
   return (
     <div
@@ -40,6 +44,13 @@ export default function SlotCell({
       role="button"
       tabIndex={0}
       aria-label={`Slot ${slot.startTime}-${slot.endTime}, ${slot.location} Platz ${slot.court}`}
+      title={
+        conflictLevel === 'red'
+          ? 'Konflikt: Doppel spielt zur selben Uhrzeit auf einem anderen Platz'
+          : conflictLevel === 'orange'
+            ? 'Hinweis: Doppel spielt direkt im nächsten Zeitslot erneut, keine Pause'
+            : undefined
+      }
     >
       {isOccupied && lines ? (
         <>

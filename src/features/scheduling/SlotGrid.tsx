@@ -1,6 +1,7 @@
 import type { Match, Slot, Team } from '../../types'
 import { COURTS } from '../../lib/scheduling'
 import { getSlotCellLines } from '../../lib/scheduleDisplay'
+import type { ScheduleConflicts } from '../../lib/scheduleConflicts'
 import { useCanEdit } from '../../state/AuthContext'
 import SlotCell from './SlotCell'
 
@@ -10,6 +11,7 @@ interface SlotGridProps {
   teams: Team[]
   selectedSlotId: string | null
   swapSelection: string[]
+  conflicts?: ScheduleConflicts
   onSelectSlot: (slotId: string) => void
   onUnassignSlot: (slotId: string) => void
 }
@@ -23,6 +25,7 @@ export default function SlotGrid({
   teams,
   selectedSlotId,
   swapSelection,
+  conflicts,
   onSelectSlot,
   onUnassignSlot,
 }: SlotGridProps) {
@@ -49,6 +52,11 @@ export default function SlotGrid({
       return <td key={`${location}-${court}`} />
     }
     const match = matches.find((m) => m.id === slot.assignedMatchId)
+    const conflictLevel = conflicts?.redSlotIds.has(slot.id)
+      ? 'red'
+      : conflicts?.orangeSlotIds.has(slot.id)
+        ? 'orange'
+        : undefined
     return (
       <td key={`${location}-${court}`}>
         <SlotCell
@@ -58,6 +66,7 @@ export default function SlotGrid({
           lines={match ? getSlotCellLines(match, teams, matches) : undefined}
           isSelected={selectedSlotId === slot.id}
           isSwapSelected={swapSelection.includes(slot.id)}
+          conflictLevel={conflictLevel}
           onSelect={() => onSelectSlot(slot.id)}
           onUnassign={() => onUnassignSlot(slot.id)}
         />
