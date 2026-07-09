@@ -65,6 +65,21 @@ export interface PublishResult {
   error?: string
 }
 
+const AUSTRIA_TIMESTAMP_FORMATTER = new Intl.DateTimeFormat('de-AT', {
+  timeZone: 'Europe/Vienna',
+  day: '2-digit',
+  month: '2-digit',
+  year: 'numeric',
+  hour: '2-digit',
+  minute: '2-digit',
+  second: '2-digit',
+})
+
+/** z.B. "09.07.2026, 21:45:12" - österreichische Zeit unabhängig von der Zeitzone des Geräts. */
+function formatAustrianTimestamp(): string {
+  return AUSTRIA_TIMESTAMP_FORMATTER.format(new Date())
+}
+
 /**
  * Schreibt den aktuellen Turnierzustand über die GitHub-Contents-API in
  * public/tournament-data.json auf dem main-Branch. Das löst automatisch den
@@ -92,7 +107,7 @@ export async function publishStateToGithub(state: AppState, token: string): Prom
       method: 'PUT',
       headers,
       body: JSON.stringify({
-        message: 'Turnierdaten veröffentlichen',
+        message: `Turnierdaten veröffentlichen (${formatAustrianTimestamp()})`,
         content,
         branch: GITHUB_BRANCH,
         ...(sha ? { sha } : {}),
