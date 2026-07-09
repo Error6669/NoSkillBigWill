@@ -33,9 +33,7 @@ export default function MyGamesView() {
         <div className="my-games-list">
           {games.map((game, index) => (
             <div className="my-games-card" key={index}>
-              <div className="my-games-card__opponent">
-                {game.matchLabel}: vs. {game.opponentText}
-              </div>
+              <div className="my-games-card__opponent">vs. {game.opponentText}</div>
               <span className={`my-games-badge my-games-badge--${game.statusClass}`}>
                 {game.statusLabel}
               </span>

@@ -169,7 +169,7 @@ export function generateMyGamesHtml(state: AppState): string {
 
       var opponent = document.createElement('div');
       opponent.className = 'game-card__opponent';
-      opponent.textContent = game.matchLabel + ': vs. ' + game.opponentText;
+      opponent.textContent = 'vs. ' + game.opponentText;
       card.appendChild(opponent);
 
       var statusBadge = document.createElement('span');

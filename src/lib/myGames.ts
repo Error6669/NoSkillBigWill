@@ -5,7 +5,6 @@ import { formatResultSummary } from './matchResult'
 import { getMatchScheduleText } from './matchDisplay'
 
 export interface MyGameInfo {
-  matchLabel: string
   opponentText: string
   statusLabel: string
   statusClass: MatchStatus
@@ -80,13 +79,12 @@ export function buildMyGamesData(state: AppState): MyGamesData {
 
       const opponentTeam = opponentId ? teamsById[opponentId] : undefined
       const opponentText = opponentTeam
-        ? `${opponentTeam.id} ${opponentTeam.displayName || '– offen –'}`
+        ? `${opponentTeam.id}: ${opponentTeam.displayName || '– offen –'}`
         : '?'
 
       const scheduleText = getMatchScheduleText(match, state.slots, state.dayConfigs)
 
       matchesByTeam[selfId].push({
-        matchLabel: match.type === 'group' ? `Gruppe ${match.groupId}` : match.label,
         opponentText,
         statusLabel: STATUS_LABELS[match.status],
         statusClass: match.status,
