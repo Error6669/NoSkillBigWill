@@ -1,5 +1,5 @@
 {
-  "publishedAt": "2026-07-30T15:46:14.440Z",
+  "publishedAt": "2026-07-30T16:45:30.844Z",
   "state": {
     "teams": [
       {
@@ -295,8 +295,32 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "scheduled",
-        "scheduledSlotId": "day3-Langenstein-1-10:00"
+        "status": "completed",
+        "scheduledSlotId": "day3-Langenstein-1-10:00",
+        "result": {
+          "sets": [
+            {
+              "team1Games": 2,
+              "team2Games": 4,
+              "tiebreak": false
+            },
+            {
+              "team1Games": 5,
+              "team2Games": 4,
+              "tiebreak": true
+            }
+          ],
+          "walkover": false,
+          "gamesTeam1": 7,
+          "gamesTeam2": 8,
+          "winnerTeamId": "A1",
+          "matchTiebreak": {
+            "team1Points": 8,
+            "team2Points": 6
+          }
+        },
+        "winner": "A1",
+        "loser": "A3"
       },
       {
         "id": "group-A-1-4",
@@ -1132,8 +1156,28 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "scheduled",
-        "scheduledSlotId": "day1-Langenstein-3-17:00"
+        "status": "completed",
+        "scheduledSlotId": "day1-Langenstein-3-17:00",
+        "result": {
+          "sets": [
+            {
+              "team1Games": 2,
+              "team2Games": 4,
+              "tiebreak": false
+            },
+            {
+              "team1Games": 4,
+              "team2Games": 5,
+              "tiebreak": true
+            }
+          ],
+          "walkover": false,
+          "gamesTeam1": 6,
+          "gamesTeam2": 9,
+          "winnerTeamId": "H4"
+        },
+        "winner": "H4",
+        "loser": "H1"
       },
       {
         "id": "group-H-2-3",
