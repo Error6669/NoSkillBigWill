@@ -1,5 +1,5 @@
 {
-  "publishedAt": "2026-07-27T11:20:59.638Z",
+  "publishedAt": "2026-07-30T15:46:14.440Z",
   "state": {
     "teams": [
       {
@@ -159,8 +159,8 @@
         "groupId": "E",
         "position": 4,
         "player1Name": "Schuster P.",
-        "player2Name": "Janko M.",
-        "displayName": "Schuster P. / Janko M."
+        "player2Name": "Schuster C.",
+        "displayName": "Schuster P. / Schuster C."
       },
       {
         "id": "F1",
@@ -485,8 +485,28 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "scheduled",
-        "scheduledSlotId": "day1-Langenstein-2-17:00"
+        "status": "completed",
+        "scheduledSlotId": "day1-Langenstein-2-17:00",
+        "result": {
+          "sets": [
+            {
+              "team1Games": 0,
+              "team2Games": 4,
+              "tiebreak": false
+            },
+            {
+              "team1Games": 0,
+              "team2Games": 4,
+              "tiebreak": false
+            }
+          ],
+          "walkover": false,
+          "gamesTeam1": 0,
+          "gamesTeam2": 8,
+          "winnerTeamId": "B4"
+        },
+        "winner": "B4",
+        "loser": "B3"
       },
       {
         "id": "group-C-1-2",
