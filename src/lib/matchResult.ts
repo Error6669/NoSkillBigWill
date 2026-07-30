@@ -140,10 +140,14 @@ export function getSetScoreIssue(
   if (a === b) {
     return 'Ungültig: ein Satz kann nicht unentschieden enden'
   }
-  const isRegularWin = winner === setGames && loser < setGames
+  // Ein Satz muss mit 2 Spielen Vorsprung gewonnen werden. Steht es einen
+  // Punkt vor dem Satzgewinn gleich (3:3 bzw. 5:5), wird weitergespielt: der
+  // Satz endet dann 5:3 bzw. 7:5 - oder bei 4:4 bzw. 6:6 im Tiebreak.
+  const isRegularWin = winner === setGames && winner - loser >= 2
+  const isExtendedWin = winner === setGames + 1 && loser === setGames - 1
   const isTiebreakWin = winner === setTiebreakTo && loser === setGames
-  if (!isRegularWin && !isTiebreakWin) {
-    return `Ungültiger Satzstand für dieses Format (bis ${setGames}, Tiebreak ${setTiebreakTo}:${setGames})`
+  if (!isRegularWin && !isExtendedWin && !isTiebreakWin) {
+    return `Ungültiger Satzstand für dieses Format (bis ${setGames} mit 2 Spielen Vorsprung, ${setGames + 1}:${setGames - 1} oder Tiebreak ${setTiebreakTo}:${setGames})`
   }
   return undefined
 }

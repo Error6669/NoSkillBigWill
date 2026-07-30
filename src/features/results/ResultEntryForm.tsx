@@ -147,8 +147,9 @@ export default function ResultEntryForm({ match, team1Id, team2Id }: ResultEntry
           </div>
 
           <p className="result-entry__hint">
-            Sätze bis {format.setGames} (TB bei {format.setGames}:{format.setGames} bis{' '}
-            {format.setTiebreakTo}), Matchtiebreak bis {format.matchTiebreakTo}
+            Sätze bis {format.setGames} mit 2 Spielen Vorsprung (also auch{' '}
+            {format.setGames + 1}:{format.setGames - 1}; TB bei {format.setGames}:{format.setGames}{' '}
+            bis {format.setTiebreakTo}), Matchtiebreak bis {format.matchTiebreakTo}
           </p>
         </div>
       )}

@@ -74,8 +74,10 @@ function randomBool(probabilityTrue: number): boolean {
 function randomSet(winnerIsTeam1: boolean, format: MatchFormat): SetScore {
   const { setGames, setTiebreakTo } = format
   const isTiebreak = randomBool(0.2)
-  const winnerGames = isTiebreak ? setTiebreakTo : setGames
-  const loserGames = isTiebreak ? setGames : randomInt(0, setGames - 1)
+  // Knapper Satzgewinn nach Gleichstand kurz vor Schluss, z.B. 5:3 bzw. 7:5.
+  const isExtended = !isTiebreak && randomBool(0.2)
+  const winnerGames = isTiebreak ? setTiebreakTo : isExtended ? setGames + 1 : setGames
+  const loserGames = isTiebreak ? setGames : isExtended ? setGames - 1 : randomInt(0, setGames - 2)
   return winnerIsTeam1
     ? { team1Games: winnerGames, team2Games: loserGames, tiebreak: isTiebreak }
     : { team1Games: loserGames, team2Games: winnerGames, tiebreak: isTiebreak }
