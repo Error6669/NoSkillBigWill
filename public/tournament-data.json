@@ -1,5 +1,5 @@
 {
-  "publishedAt": "2026-08-01T14:18:41.868Z",
+  "publishedAt": "2026-08-01T15:46:29.898Z",
   "state": {
     "teams": [
       {
@@ -1564,8 +1564,28 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "scheduled",
-        "scheduledSlotId": "day3-Langenstein-1-16:00"
+        "status": "completed",
+        "scheduledSlotId": "day3-Langenstein-1-16:00",
+        "result": {
+          "sets": [
+            {
+              "team1Games": 4,
+              "team2Games": 2,
+              "tiebreak": false
+            },
+            {
+              "team1Games": 4,
+              "team2Games": 1,
+              "tiebreak": false
+            }
+          ],
+          "walkover": false,
+          "gamesTeam1": 8,
+          "gamesTeam2": 3,
+          "winnerTeamId": "F1"
+        },
+        "winner": "F1",
+        "loser": "F4"
       },
       {
         "id": "group-F-2-3",
@@ -1950,8 +1970,28 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "scheduled",
-        "scheduledSlotId": "day3-Langenstein-2-16:00"
+        "status": "completed",
+        "scheduledSlotId": "day3-Langenstein-2-16:00",
+        "result": {
+          "sets": [
+            {
+              "team1Games": 4,
+              "team2Games": 2,
+              "tiebreak": false
+            },
+            {
+              "team1Games": 4,
+              "team2Games": 1,
+              "tiebreak": false
+            }
+          ],
+          "walkover": false,
+          "gamesTeam1": 8,
+          "gamesTeam2": 3,
+          "winnerTeamId": "H1"
+        },
+        "winner": "H1",
+        "loser": "H2"
       },
       {
         "id": "group-H-1-3",
@@ -2137,25 +2177,32 @@
         },
         "team1Resolved": true,
         "team2Resolved": true,
-        "status": "scheduled",
+        "status": "completed",
         "scheduledSlotId": "day3-Langenstein-3-16:00",
         "result": {
           "sets": [
             {
-              "team1Games": 0,
-              "team2Games": 0,
+              "team1Games": 1,
+              "team2Games": 4,
               "tiebreak": false
             },
             {
-              "team1Games": 0,
-              "team2Games": 0,
+              "team1Games": 5,
+              "team2Games": 3,
               "tiebreak": false
             }
           ],
           "walkover": false,
-          "gamesTeam1": 0,
-          "gamesTeam2": 0
-        }
+          "gamesTeam1": 6,
+          "gamesTeam2": 7,
+          "winnerTeamId": "H3",
+          "matchTiebreak": {
+            "team1Points": 8,
+            "team2Points": 6
+          }
+        },
+        "winner": "H3",
+        "loser": "H4"
       },
       {
         "id": "vf1",
