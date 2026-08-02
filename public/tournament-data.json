@@ -1,5 +1,5 @@
 {
-  "publishedAt": "2026-08-01T18:52:07.405Z",
+  "publishedAt": "2026-08-02T12:24:08.999Z",
   "state": {
     "teams": [
       {
@@ -2376,25 +2376,28 @@
         },
         "team1Resolved": false,
         "team2Resolved": false,
-        "status": "scheduled",
+        "status": "completed",
         "scheduledSlotId": "day4-Langenstein-1-10:00",
         "result": {
           "sets": [
             {
-              "team1Games": 0,
-              "team2Games": 0,
+              "team1Games": 7,
+              "team2Games": 5,
               "tiebreak": false
             },
             {
-              "team1Games": 0,
-              "team2Games": 0,
-              "tiebreak": false
+              "team1Games": 7,
+              "team2Games": 6,
+              "tiebreak": true
             }
           ],
           "walkover": false,
-          "gamesTeam1": 0,
-          "gamesTeam2": 0
-        }
+          "gamesTeam1": 14,
+          "gamesTeam2": 11,
+          "winnerTeamId": "A1"
+        },
+        "winner": "A1",
+        "loser": "E2"
       },
       {
         "id": "sf2",
@@ -2411,8 +2414,28 @@
         },
         "team1Resolved": false,
         "team2Resolved": false,
-        "status": "scheduled",
-        "scheduledSlotId": "day4-Langenstein-1-12:00"
+        "status": "completed",
+        "scheduledSlotId": "day4-Langenstein-1-12:00",
+        "result": {
+          "sets": [
+            {
+              "team1Games": 5,
+              "team2Games": 7,
+              "tiebreak": false
+            },
+            {
+              "team1Games": 6,
+              "team2Games": 7,
+              "tiebreak": true
+            }
+          ],
+          "walkover": false,
+          "gamesTeam1": 11,
+          "gamesTeam2": 14,
+          "winnerTeamId": "C1"
+        },
+        "winner": "C1",
+        "loser": "B1"
       },
       {
         "id": "final",
