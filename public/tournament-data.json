@@ -1,5 +1,5 @@
 {
-  "publishedAt": "2026-08-02T13:18:17.326Z",
+  "publishedAt": "2026-08-02T15:22:27.825Z",
   "state": {
     "teams": [
       {
@@ -2452,8 +2452,28 @@
         },
         "team1Resolved": false,
         "team2Resolved": false,
-        "status": "scheduled",
-        "scheduledSlotId": "day4-Langenstein-1-16:00"
+        "status": "completed",
+        "scheduledSlotId": "day4-Langenstein-1-16:00",
+        "result": {
+          "sets": [
+            {
+              "team1Games": 6,
+              "team2Games": 7,
+              "tiebreak": true
+            },
+            {
+              "team1Games": 2,
+              "team2Games": 6,
+              "tiebreak": false
+            }
+          ],
+          "walkover": false,
+          "gamesTeam1": 8,
+          "gamesTeam2": 13,
+          "winnerTeamId": "C1"
+        },
+        "winner": "C1",
+        "loser": "A1"
       },
       {
         "id": "third-place",
